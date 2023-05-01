@@ -1,0 +1,13 @@
+{
+	"genericName": "Siege Ladders",
+	"description": "Siege ladders are a necessary component of any siege.",
+	"cost": {"food": 0, "wood": 600, "stone": 0, "metal": 0},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "siege_ladders.png",
+	"researchTime": 40,
+	"tooltip": "+1 capture attack for soldiers.",
+	"affects": ["Soldier"],
+	"modifications": [{"value": "Attack/Capture/Value", "add": 1}],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

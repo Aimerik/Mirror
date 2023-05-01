@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="26.0" depth="28.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>mace</Civ>
+    <SpecificName>Phrourion</SpecificName>
+    <Tooltip>Build in own or neutral territory. Acquire large tracts of territory.Territory root. Train Champion and research technologies. Garrison Soldiers for additional arrows.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="24.0" depth="26.0"/>
+  </Obstruction>
+  <Researcher>
+    <Technologies datatype="tokens">
+      silvershields
+    </Technologies>
+  </Researcher>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_cavalry
+      units/{civ}/infantry_pikeman_b        
+      units/{civ}/infantry_javelineer_b     
+      units/{civ}/cavalry_spearman_b  
+      units/{civ}/cavalry_javelineer_b       
+      units/{civ}/infantry_archer_merc_a  
+      units/{civ}/infantry_slinger_merc_a            
+    </Entities>
+  </Trainer>
+  <VisualActor>
+    <Actor>structures/macedonians/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>24.0</Length>
+    <Indent>7.6</Indent>
+  </WallPiece>
+</Entity>

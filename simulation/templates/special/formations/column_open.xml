@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_formation">
+  <Formation>
+    <MaxColumns>2</MaxColumns>
+    <MinColumns>2</MinColumns>
+    <ShiftRows>true</ShiftRows>
+    <UnitSeparationWidthMultiplier>2</UnitSeparationWidthMultiplier>
+  </Formation>
+  <Identity>
+    <GenericName>Column Open</GenericName>
+    <Icon>formations/column_open.png</Icon>
+  </Identity>
+</Entity>
+

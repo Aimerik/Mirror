@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_elephant_melee">
+  <Auras datatype="tokens">
+   units/elephant_fear
+  </Auras>    
+  <Cost>
+    <Resources>
+      <food>650</food>
+      <metal>200</metal>
+    </Resources>
+  </Cost>
+<Garrisonable>
+  <Size>6</Size>
+</Garrisonable>    
+  <Footprint replace="">
+    <Square width="4.5" depth="9.0"/>
+    <Height>9.0</Height>
+  </Footprint>
+  <Health>
+    <Max>600</Max>
+  </Health>
+  <Identity>
+    <GenericName>Hero Elephant</GenericName>
+    <Tooltip>Elephants are good at killing soldiers and are also good at destroying non-defensive structures.</Tooltip> 
+    <VisibleClasses datatype="tokens">Armored Elephant Melee</VisibleClasses>
+  </Identity>
+  <Loot>
+    <food>60</food>
+    <metal>40</metal>
+    <captive>3</captive>       
+  </Loot>
+  <Position>
+    <TurnRate>4</TurnRate>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>9</Hack>
+        <Pierce>11</Pierce>
+        <Thump>9</Thump>          
+        <Crush>5</Crush>    
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Shape>
+        <Circle radius="5.0"/>
+      </Shape>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/elephant_select.xml</select>
+      <order_walk>actor/fauna/animal/elephant_order.xml</order_walk>
+      <order_attack>actor/fauna/animal/elephant_attack_order.xml</order_attack>
+      <order_gather>actor/fauna/animal/elephant_order.xml</order_gather>
+      <order_garrison>actor/fauna/animal/elephant_order.xml</order_garrison>
+      <attack_melee>actor/fauna/animal/elephant_attack.xml</attack_melee>
+      <walk>actor/mounted/movement/walk.xml</walk>
+      <run>actor/mounted/movement/walk.xml</run>
+      <death>actor/fauna/animal/elephant_death.xml</death>
+      <trained>actor/fauna/animal/elephant_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>10.0</HeightOffset>
+  </StatusBars>  
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>
+</Entity>

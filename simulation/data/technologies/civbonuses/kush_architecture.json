@@ -1,0 +1,13 @@
+{
+	"genericName": "Monumental Architecture",
+	"autoResearch": true,	
+    "requirements": { "civ": "kush" },
+
+	"tooltip": "temple and Pyramid and wonder Structures +20% build time, +25% health, and +25% capture points.",
+	"modifications": [
+		{ "value": "Capturable/CapturePoints", "multiply": 1.25 },
+		{ "value": "Cost/BuildTime", "multiply": 1.2 },
+		{ "value": "Health/Max", "multiply": 1.25 }
+	],
+	"affects": ["Temple","Pyramid","Wonder"]
+}

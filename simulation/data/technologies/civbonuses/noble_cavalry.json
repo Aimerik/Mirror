@@ -1,0 +1,16 @@
+{
+	"genericName": "Noble Cavalry",
+	"description": "At the heart of the Macedonian army were cavalry made up of nobles.",
+	"requirements": {
+
+				"any": [
+					{ "civ": "mace" }
+				]
+	},
+	"autoResearch": true,
+	"tooltip": "Spear Cavalry training time -20%.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8 }
+	],
+	"affects": ["Cavalry Spearman !Hero"]
+}

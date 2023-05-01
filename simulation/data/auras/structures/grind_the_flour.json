@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["Worker"],
+	"modifications": [{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.05 }],
+	"auraDescription" : "+5% grain gather rate for nearby workers.",
+	"auraName": "Grind the flour",
+	"overlayIcon": "art/textures/ui/session/auras/farming.png"
+}

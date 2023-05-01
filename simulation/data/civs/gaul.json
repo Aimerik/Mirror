@@ -1,0 +1,73 @@
+{
+	"Code": "gaul",
+	"Culture": "celt",
+	"Music": [
+		{
+			"File": "Celtic_Pride.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Cisalpine_Gaul.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Harvest_Festival.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Water's_Edge.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Sunrise.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Deas Celtica",
+			"History": "Celtic religion and druidry inspired their warlike mindset.",
+			"Description": "Druids increase attack rates of soldiers near them slightly."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/gaul/wallset_stone"
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/gaul/civil_centre"
+		},
+		{
+			"Template": "units/gaul/support_slave",
+			"Count": 4
+		},
+		{
+			"Template": "units/gaul/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/gaul/cavalry_scout"
+		}
+	],
+	"AINames": [
+		"Viridomarus",
+		"Brennus",
+		"Cativolcus",
+		"Cingetorix",
+		"Vercingetorix",
+		"Divico",
+		"Ambiorix",
+		"Liscus",
+		"Valetiacus",
+		"Viridovix"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_cavalry": "units/gaul/cavalry_scout",
+		"skirmish/units/default_infantry_melee_b": "units/gaul/support_citizen",
+		"skirmish/units/default_infantry_ranged_b": "units/gaul/support_citizen",
+		"skirmish/structures/default_house_5": "structures/{civ}/house",
+		"skirmish/units/default_support_female_citizen": "units/gaul/support_slave"
+	},
+	"SelectableInGameSetup": true
+}

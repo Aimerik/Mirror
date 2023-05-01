@@ -1,0 +1,79 @@
+{
+	"Code": "brit",
+	"Culture": "celt",
+	"Music": [
+		{
+			"File": "Highland_Mist.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Water's_Edge.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Celtic_Pride.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Cisalpine_Gaul.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Celtica.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [
+		{
+			"Name": "Deas Celtica",
+			"History": "Celtic religion and druidry inspired their warlike mindset.",
+			"Description": "Druids increase attack rates of soldiers near them slightly."
+		}
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/brit/wallset_stone"
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/brit/civil_centre"
+		},
+		{
+			"Template": "units/brit/support_slave",
+			"Count": 4
+		},
+		{
+			"Template": "units/brit/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/brit/cavalry_scout",
+			"Count": 1
+		},
+		{
+			"Template": "units/brit/war_dog"
+		}
+	],
+	"AINames": [
+		"Karatakos",
+		"Kunobelinos",
+		"Boudicca",
+		"Prasutagus",
+		"Venutius",
+		"Cogidubnus",
+		"Commius",
+		"Comux",
+		"Adminius",
+		"Dubnovellaunus",
+		"Vosenius"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_cavalry": "units/brit/cavalry_scout",
+		"skirmish/units/default_infantry_melee_b": "units/brit/support_citizen",
+		"skirmish/units/default_infantry_ranged_b": "units/brit/support_citizen",
+		"skirmish/units/special_starting_unit": "units/brit/war_dog",
+		"skirmish/units/default_support_female_citizen": "units/brit/support_slave",
+		"skirmish/structures/default_house_5": "structures/{civ}/house"
+	},
+	"SelectableInGameSetup": true
+}

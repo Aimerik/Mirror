@@ -1,0 +1,12 @@
+{
+    "code": "captive",
+    "name": "Captive",
+    "description": "Obtained by killing enemies, which can be used to train slaves, trade or research technology.",
+    "order": 5,
+    "subtypes": {
+      "humanCaptive": "Human Captive"
+    },
+    "properties": ["tributable","zeroResourceStart"],
+    "truePrice": 100,
+    "aiAnalysisInfluenceGroup": "ignore"
+  }

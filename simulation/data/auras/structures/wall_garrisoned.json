@@ -1,0 +1,12 @@
+{
+	"type": "turretedUnits",
+	"affects": ["Soldier"],
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 10 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 4 },
+		{ "value": "Attack/Ranged/MaxRange", "add": 10 },
+		{ "value": "Vision/Range", "add": 20 }
+	],
+	"auraName": "Wall Protection",
+	"auraDescription": "Turreted Soldiers +4 crush and +10 pierce resistance and +20 vision range and +10 Attack Max Range."
+}

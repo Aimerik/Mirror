@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint replace="">
+    <Circle radius="17.0"/>
+    <Height>18.0</Height>
+  </Footprint>
+  <Health>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <Civ>brit</Civ>
+    <SpecificName>Dunon</SpecificName>
+    <Tooltip>Build in own or neutral territory. Acquire large tracts of territory.Territory root. Train Champion and research technologies. Garrison Soldiers for additional arrows.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="29.0" depth="29.0"/>
+  </Obstruction>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_swordsman
+      units/{civ}/infantry_spearman_b 
+      units/{civ}/infantry_slinger_b         
+      units/{civ}/infantry_javelineer_b     
+      units/{civ}/cavalry_swordsman_b              
+      units/{civ}/chariot_javelineer_b 
+    </Entities>
+  </Trainer>     
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/britons/fortress.xml</Actor>
+    <FoundationActor>structures/fndn_9x9.xml</FoundationActor>
+  </VisualActor>
+  <WallPiece>
+    <Length>28</Length>
+  </WallPiece>
+</Entity>

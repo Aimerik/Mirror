@@ -1,0 +1,22 @@
+{
+	"genericName": "Silver Shields Regiment",
+	"description": "The Silver Shields, or Argyraspidai, were the elite heavy infantry arm of the Macedonian army.",
+	"cost": {
+		"faith": 300,
+		"metal": 300
+	},
+	"requirements": {
+			"entity": {
+			"class": "Fortress",
+			"number": 2
+		}
+	},	
+	"icon": "shields_generic_silver.png",
+	"researchTime": 60,
+	"tooltip": "Upgrade Shield Bearer Champion Infantry to Silver Shields, health +25% and resistance pierce +2，two fortress need to be built.",
+	"modifications": [
+		{ "value": "Promotion/RequiredXp", "replace": 0 }
+	],
+	"affects": ["Champion Infantry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

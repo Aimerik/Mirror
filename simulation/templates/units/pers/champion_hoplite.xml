@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="hoplite|template_unit_champion_infantry_spearman">
+  <Cost>
+     <BuildTime>10</BuildTime>    
+    <Resources>
+      <food>0</food>           
+      <metal>100</metal>
+      <faith>0</faith> 
+    </Resources>
+  </Cost>  
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Greek Hoplite</GenericName>
+    <SpecificName>Hoplites Mercenary</SpecificName>
+    <Icon>units/hele_infantry_spearman.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/spartans/infantry_spearman_c.xml</Actor>
+  </VisualActor>
+</Entity>

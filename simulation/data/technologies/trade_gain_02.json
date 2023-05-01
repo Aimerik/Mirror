@@ -1,0 +1,17 @@
+{
+	"genericName": "Advanced Handicraft",
+	"description": "The progress in handicraft improves the trading profit.",
+	"cost": {
+		"metal": 400
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "metal_pot.png",
+	"researchTime": 40,
+	"tooltip": "Traders and Merchantman +15% trade gain.",
+	"modifications": [
+		{ "value": "Trader/GainMultiplier", "multiply": 1.15 }
+	],
+	"affects": ["Trader","Merchantman"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

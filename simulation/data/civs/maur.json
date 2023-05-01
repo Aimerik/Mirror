@@ -1,0 +1,74 @@
+{
+	"Code": "maur",
+	"Culture": "maur",
+	"Music": [
+		{
+			"File": "An_old_Warhorse_goes_to_Pasture.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Land_between_the_two_Seas.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Eastern_Dreams.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Karmic_Confluence.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [
+				{
+			"Name": "Rice Paddy",
+			"History": "Rice is the most important food crop in the Indian region.",
+			"Description": "Smaller field area,max gatherer and wood cost -40%."
+		}	
+	],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/maur/wallset_stone"
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/maur/civil_centre"
+		},
+		{
+			"Template": "units/maur/support_slave",
+			"Count": 4
+		},
+		{
+			"Template": "units/maur/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/maur/cavalry_scout",
+			"Count": 1
+		},
+		{
+			"Template": "units/maur/support_elephant",
+			"Count": 1
+		}
+	],
+	"AINames": [
+		"Chandragupta Maurya",
+		"Bindusara Maurya",
+		"Ashoka the Great",
+		"Dasharatha Maurya",
+		"Samprati Maurya",
+		"Shalishuka Maurya",
+		"Devavarman Maurya",
+		"Shatadhanvan Maurya",
+		"Brihadratha Maurya"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_cavalry": "units/maur/cavalry_scout",
+		"skirmish/units/default_infantry_melee_b": "units/maur/support_citizen",
+		"skirmish/units/default_infantry_ranged_b": "units/maur/support_citizen",
+		"skirmish/units/special_starting_unit": "units/maur/support_elephant",
+		"skirmish/units/default_support_female_citizen": "units/maur/support_slave",
+		"skirmish/structures/default_house_5": "structures/{civ}/house"
+	},
+	"SelectableInGameSetup": true
+}

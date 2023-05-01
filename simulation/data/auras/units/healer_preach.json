@@ -1,0 +1,11 @@
+{
+    "type": "range",
+    "radius": 15,
+    "affects": ["Unit"],
+    "modifications": [
+        { "value": "Faith/TrickleRate", "add": 0.1 }
+    ],
+    "auraName": "preach",
+    "auraDescription": "Priests preached to the faithful to consolidate their faith in the gods.",
+    "overlayIcon": "art/textures/ui/session/auras/firm_belief.png"
+}

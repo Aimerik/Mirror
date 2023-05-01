@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry">
+  <Attack>
+    <Ranged>
+      <AttackName>Torch</AttackName>
+      <Damage>
+        <Fire>3</Fire>
+      </Damage>
+      <MaxRange>10</MaxRange>
+      <MinRange>5</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>3000</RepeatTime>
+      <Projectile>
+        <Speed>40</Speed>
+        <Spread>0</Spread>
+        <Gravity>20</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <ApplyStatus>
+        <Burning>
+          <Interval>1250</Interval>
+          <Damage>
+            <Fire>3</Fire>
+          </Damage>
+          <Stackability>Stack</Stackability>
+          <Duration>5000</Duration>
+        </Burning>
+      </ApplyStatus>
+      <PreferredClasses datatype="tokens">Structure Ship</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Organic Siege</RestrictedClasses>
+    </Ranged>
+  </Attack>
+  <Health>
+    <Max>110</Max>
+  </Health>
+  <Identity>
+    <GenericName>Melee Infantry</GenericName>
+    <VisibleClasses datatype="tokens">Melee</VisibleClasses>
+  </Identity>
+  <Loot>
+    <metal>5</metal>
+  </Loot>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/testudo
+    </Formations>
+  </UnitAI>
+</Entity>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry_melee">
+  <Attack>
+    <Melee>
+      <AttackName>Mace</AttackName>
+      <Damage>
+        <Thump>12</Thump>
+      </Damage>
+      <Bonuses>
+  <Bonus1>
+          <Classes>Armored</Classes>
+          <Multiplier>0.75</Multiplier>
+  </Bonus1>
+  <Bonus2>
+          <Classes>Ranged Infantry</Classes>
+          <Multiplier>1.25</Multiplier>
+  </Bonus2>   
+      </Bonuses>      
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <PreferredClasses datatype="tokens">!Ship</PreferredClasses>    
+    </Melee>
+  </Attack>
+  <Identity>
+    <GenericName>Hero Infantry Maceman</GenericName>
+    <Tooltip>Counters: 0.75× vs Armored and 1.25× vs Ranged Infantry.</Tooltip>     
+    <VisibleClasses datatype="tokens">Melee Maceman</VisibleClasses>
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="add">1.2</WalkSpeed>
+  </UnitMotion> 
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword_attack.xml</attack_melee>
+    </SoundGroups>
+  </Sound>
+</Entity>

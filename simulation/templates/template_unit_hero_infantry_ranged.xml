@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_infantry">
+  <Attack>
+    <Melee>
+      <AttackName>Torch</AttackName>
+      <Damage>
+        <Fire>3</Fire>
+      </Damage>
+      <MaxRange>10</MaxRange>
+      <MinRange>5</MinRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>3000</RepeatTime>
+      <Projectile>
+        <Speed>40</Speed>
+        <Spread>0</Spread>
+        <Gravity>20</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <ApplyStatus>
+        <Burning>
+          <Interval>1250</Interval>
+          <Damage>
+            <Fire>3</Fire>
+          </Damage>
+          <Stackability>Stack</Stackability>
+          <Duration>5000</Duration>
+        </Burning>
+      </ApplyStatus>
+      <PreferredClasses datatype="tokens">Structure</PreferredClasses>
+      <RestrictedClasses datatype="tokens">Unit</RestrictedClasses>
+    </Melee>
+    <Ranged>
+      <RestrictedClasses datatype="tokens">Structure</RestrictedClasses>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <GenericName>Hero Infantry</GenericName>
+    <VisibleClasses datatype="tokens">Ranged</VisibleClasses>
+  </Identity>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack op="add">-4</Hack>
+        <Pierce op="add">-4</Pierce>
+        <Thump op="add">-4</Thump>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Turretable/>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/skirmish
+    </Formations>
+  </UnitAI>
+</Entity>

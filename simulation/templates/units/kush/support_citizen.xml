@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support_citizen">
+    <Builder>
+    <Entities datatype="tokens">
+      structures/kush/pyramid_small
+      structures/kush/pyramid_large
+      structures/kush/temple_amun
+    </Entities>
+  </Builder>
+    <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>10</Pierce>
+      </Damage>
+      <Bonuses>
+  <Bonus1>
+          <Classes>Elephant</Classes>
+          <Multiplier>2</Multiplier>
+  </Bonus1>
+      </Bonuses>        
+      <MaxRange>30</MaxRange>
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>2.5</Spread>
+        <Gravity>50</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <RestrictedClasses datatype="tokens">Human Structure Mechanical</RestrictedClasses>      
+      <PreferredClasses datatype="tokens">Fauna</PreferredClasses>
+    </Ranged>
+  </Attack>   
+  <Identity>
+    <Civ>kush</Civ>
+    <Lang>napatan</Lang>
+    <SpecificName>Meroe Citizen</SpecificName>
+    <Icon>units/kush/support_citizen.png</Icon>
+    <SelectionGroupName>units/kush/support_citizen</SelectionGroupName>
+  </Identity>
+  <VisualActor>
+    <Actor>units/kushites/citizen_{phenotype}.xml</Actor>
+  </VisualActor>
+</Entity>

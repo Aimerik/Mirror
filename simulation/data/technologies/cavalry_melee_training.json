@@ -1,0 +1,20 @@
+{
+	"genericName": "Melee training",
+	"description": "Let the shooter learn to deal with close enemies.",
+	"cost": {
+		"metal":300,	
+		"faith": 300
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "sword_cavalry.png",
+	"researchTime": 40,
+	"tooltip": "Ranged Cavalry +2 hack and thump resistance, remove MinRange.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 2 },
+		{ "value": "Resistance/Entity/Damage/Thump", "add": 2 },
+		{ "value": "Attack/Ranged/MinRange", "replace": 0 }
+	],
+	"affects": ["Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

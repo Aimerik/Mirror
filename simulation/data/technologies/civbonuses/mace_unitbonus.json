@@ -1,0 +1,10 @@
+{
+	"genericName": "Conquer",
+	"autoResearch": true,
+	"description": "Macedonian forces and allies took over most of the world they knew, including Egypt, Persia and parts of the Indian subcontinent.",
+    "requirements": { "civ": "mace" },
+	"tooltip": "+50% capture attack for soldier.",
+	"modifications": [{ "value": "Attack/Capture/Capture", "multiply": 1.5 }],
+	"affects": ["Unit"]
+}
+

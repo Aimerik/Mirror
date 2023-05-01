@@ -1,0 +1,16 @@
+{
+	"genericName": "Training",
+	"description": "Significantly increase training speed of soldier by training them in large batches or companies.",
+	"cost": {
+		"food": 1000
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "fist_spear_fire.png",
+	"researchTime": 40,
+	"tooltip": "Soldier −20% batch training time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.8, "affects": "Soldier" }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

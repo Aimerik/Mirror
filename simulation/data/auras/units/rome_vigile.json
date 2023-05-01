@@ -1,0 +1,10 @@
+{
+	"type": "range",
+	"radius": 15,
+	"affects": ["Citizen Soldier"],
+	"modifications": [{ "value": "Builder/Rate", "multiply": 1.05 },
+				  { "value": "ResourceGatherer/BaseSpeed", "multiply": 1.1 }],
+	"auraName": "Public Order",
+	"auraDescription": "+5% gather rate for nearby citizen soldiers.",
+	"overlayIcon": "art/textures/ui/session/auras/buildgather_bonus.png"
+}

@@ -1,0 +1,22 @@
+{
+	"genericName": "Diaspora",
+	"description": "The extension of trade leads to the permanent establishment of storekeepers and their families in foreign countries, allowing them to exploit the wealth of these countries.",
+	"cost": {
+		"wood": 600,
+		"metal": 300
+	},
+	"requirements": {
+		"entity": {
+			"class": "Trader",
+			"number": 3
+		}
+	},
+	"requirementsTooltip": "Requires three Traders",
+	"icon": "dove.png",
+	"researchTime": 40,
+	"tooltip": "Allows using allied dropsites.",
+	"modifications": [
+		{ "value": "Player/sharedDropsites", "replace": true }
+	],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

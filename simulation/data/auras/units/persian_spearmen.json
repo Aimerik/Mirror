@@ -1,0 +1,8 @@
+{
+	"type": "range",
+     "radius": 6,
+	"affects": ["Soldier","Support"],
+	"modifications": [{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 }],
+	"auraName": "Large Sparas",
+	"auraDescription": "+1 pierce armour for nearby soldier and support."
+}

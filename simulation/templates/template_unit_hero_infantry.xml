@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero"> 
+  <Cost>
+    <Resources>
+      <food>120</food>
+      <metal>50</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>150</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Infantry</VisibleClasses>
+    <GenericName>Hero</GenericName>
+  </Identity>
+  <Position>
+    <Anchor>upright</Anchor>
+  </Position>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>10</Hack>
+        <Pierce>10</Pierce>
+        <Thump>8</Thump>          
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Selectable>
+    <Overlay>
+      <Shape>
+        <Circle radius="2.0"/>
+      </Shape>
+      <Texture>
+        <MainTexture>128x128/star.png</MainTexture>
+        <MainTextureMask>128x128/star_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+</Entity>

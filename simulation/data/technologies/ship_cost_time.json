@@ -1,0 +1,18 @@
+{
+	"genericName": "Skilled shipbuilder",
+	"description": "Employ skilled shipbuilder with specialized tools to speed up ship construction.",
+	"cost": {
+		"metal": 300,
+		"food": 600
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "calipers.png",
+	"researchTime": 60,
+	"tooltip": "Ships −40% construction time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.6 }
+	],
+	"affects": ["Ship"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_infantry_swordsman">
+  <Auras datatype="tokens">
+   units/rome_centurio
+  </Auras>
+   <Attack>
+    <Melee>
+      <Damage>
+        <Hack>9</Hack>
+      </Damage>
+    </Melee>
+  </Attack>   
+    <Cost>
+    <BuildTime>20</BuildTime>
+    <Resources>
+      <food>600</food>
+      <wood>0</wood>
+      <metal>150</metal>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>rome</Civ>
+    <Lang>latin</Lang>
+    <GenericName>Roman Centurion</GenericName>
+    <SpecificName>Centuriō</SpecificName>
+    <Icon>units/rome_champion_legion_centurio.png</Icon>
+    <SelectionGroupName>units/champion_centurion</SelectionGroupName>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Promotion>
+    <Entity>units/champion_centurion</Entity>
+    <RequiredXp>130</RequiredXp>
+  </Promotion>
+ <VisualActor>
+    <Actor>units/romans/infantry_swordsman_c2.xml</Actor>
+  </VisualActor>
+</Entity>

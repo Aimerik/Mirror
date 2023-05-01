@@ -1,0 +1,8 @@
+{
+	"type": "global",
+	"affects": ["Soldier !Mercenary"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [{ "value": "Cost/Resources/metal", "multiply": 0.8 }],
+	"auraName": "Gaul Forging",
+	"auraDescription": "-20% metal cost for soldiers."
+}

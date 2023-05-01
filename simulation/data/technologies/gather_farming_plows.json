@@ -1,0 +1,18 @@
+{
+	"genericName": "Cattle ploughing",
+	"description": "Equip your workers with iron plows, animal-drawn instruments to turn the sod.",
+	"cost": {
+		"food": 400,
+		"metal": 200
+	},
+	"requirements": { "tech": "phase_town" },
+	"requirementsTooltip": "Unlocked in Town Phase.",
+	"icon": "plow.png",
+	"researchTime": 40,
+	"tooltip": "Workers +20% grain gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.grain", "multiply": 1.2 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

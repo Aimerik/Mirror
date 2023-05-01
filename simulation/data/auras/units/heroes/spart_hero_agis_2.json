@@ -1,0 +1,8 @@
+{
+	"type": "global",
+      "affects": ["Soldier"],
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.85 }],
+	"auraName": "Military Training",
+	"auraDescription": "-15% training time for soldier.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_chariot_scythe">
+  <Auras datatype="tokens">
+    units/heroes/han_hero_han_xin_1
+    units/heroes/han_hero_han_xin_2
+  </Auras>
+  <Footprint replace="">
+    <Square depth="10.0" width="10.0"/>
+    <Height>5.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>han</Civ>
+    <SpecificName>Hán Xìn</SpecificName>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+    <Icon>units/han/hero_wei_qing.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/han/hero_chariot_crossbowman_wei_qing_m.xml</Actor>
+  </VisualActor>
+</Entity>

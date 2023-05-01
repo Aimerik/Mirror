@@ -1,0 +1,18 @@
+{
+	"genericName": "Fulat Steel",
+	"autoResearch": true,	
+	"description": "Fulat Steel, produced in India, takes on a unique and beautiful grain on the blade when forged into swords. Not only that, but the hardness of this steel is unparalleled.",
+	"requirements": {
+		"any": [
+			{ "civ": "maur" }
+		]
+	},
+	"icon": "metalworker.png",
+	"tooltip": "Swordsmen +10% melee attack damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Hack", "affects": "Swordsman", "multiply": 1.1 },
+		{ "value": "Attack/Melee/Damage/Pierce", "affects": "Swordsman", "multiply": 1.1 },
+		{ "value": "Attack/Melee/Damage/Crush", "affects": "Swordsman", "multiply": 1.1 }
+	],
+	"affects": ["Swordsman"]
+}

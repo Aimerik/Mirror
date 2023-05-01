@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee_swordsman">
+  <Builder>
+    <Entities datatype="tokens">
+      structures/spart/syssiton
+      -structures/{civ}/wallset_stone
+    </Entities>
+  </Builder>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Attack>
+    <Melee>
+      <Damage>
+        <Hack>7</Hack>
+      </Damage>
+    </Melee>
+  </Attack>
+  <Cost>
+    <BuildTime>10</BuildTime>
+    <Resources>
+      <food>90</food>
+      <wood>0</wood>
+      <metal>10</metal>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Identity>
+    <Civ>spart</Civ>
+    <Lang>greek</Lang>
+    <GenericName>Skiritai Commando</GenericName>
+    <SpecificName>Ékdromos Skirítēs</SpecificName>
+    <Icon>units/spart_champion_infantry_sword.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <metal op="add">3</metal>
+  </Loot>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/spartans/infantry_swordsman_c.xml</Actor>
+  </VisualActor>
+</Entity>

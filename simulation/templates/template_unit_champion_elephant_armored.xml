@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_elephant">
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>9</Hack>
+        <Pierce>11</Pierce>
+        <Thump>9</Thump>          
+        <Crush>5</Crush>      
+      </Damage>
+    </Entity>
+  </Resistance> 
+   <Cost>
+    <Resources>
+      <food>650</food>
+      <metal>200</metal>
+    </Resources>
+  </Cost>  
+  <Health>
+    <Max>600</Max>
+  </Health>    
+  <Identity>
+    <VisibleClasses datatype="tokens">Armored Melee</VisibleClasses>
+    <RequiredTechnology>phase_city</RequiredTechnology>      
+    <Tooltip>Elephants are good at killing soldiers and are also good at destroying non-defensive structures.</Tooltip> 
+  </Identity>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>  
+</Entity>

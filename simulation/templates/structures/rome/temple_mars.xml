@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_civic_temple">
+   <Auras datatype="tokens">
+    structures/rome_faith
+  </Auras> 
+  <BuildRestrictions>
+    <Category>TempleOfMars</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime op="mul">2</BuildTime>
+    <Resources>
+      <food>400</food>
+      <stone>400</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="24.0" depth="44.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max op="add">10</Max>
+  </GarrisonHolder>   
+  <Identity>
+    <Civ>rome</Civ>
+    <GenericName>Temple of Mars</GenericName>
+    <SpecificName>Aedēs Mārtiālis</SpecificName>
+    <Classes datatype="tokens">CivSpecific</Classes>    
+    <VisibleClasses datatype="tokens">TempleOfMars</VisibleClasses>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Icon>structures/temple_epic.png</Icon>
+  </Identity>
+  <Obstruction>
+    <Static width="20.0" depth="40.0"/>
+  </Obstruction>
+  <TerritoryInfluence>
+    <Radius op="add">12</Radius>
+  </TerritoryInfluence>
+  <VisualActor>
+    <Actor>structures/romans/temple_mars.xml</Actor>
+  </VisualActor>
+</Entity>

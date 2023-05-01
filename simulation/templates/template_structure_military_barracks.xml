@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <Cost>
+    <BuildTime>120</BuildTime>
+    <Resources>
+      <wood>200</wood>
+      <stone>100</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="19.0" depth="19.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>10</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Infantry Cavalry</List>
+    <BuffHeal>3</BuffHeal>
+    <LoadingRange>1</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_4x4</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Barracks</GenericName>
+    <SelectionGroupName>template_structure_military_barracks</SelectionGroupName>
+    <Tooltip>Train Infantry and research Infantry technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">Town Barracks</VisibleClasses>
+    <Icon>structures/barracks.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <wood>40</wood>
+    <stone>20</stone>
+  </Loot>
+  <Obstruction>
+    <Static width="17.0" depth="17.0"/>
+  </Obstruction>
+  <ProductionQueue/>
+  <Researcher>
+    <Technologies datatype="tokens">
+      soldier_batch_training 
+      melee_training
+    </Technologies>
+  </Researcher>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Fire>4</Fire>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_barracks.xml</select>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>32</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_6x6.xml</FoundationActor>
+  </VisualActor>
+</Entity>

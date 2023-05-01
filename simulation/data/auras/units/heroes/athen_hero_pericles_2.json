@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Temple"],
+	"modifications": [
+		{ "value": "Cost/Resources/stone", "multiply": 0.75 },
+		{ "value": "GarrisonHolder/BuffHeal", "add": 2 }
+	],
+	"auraName": "Temple of Athena Nike",
+	"auraDescription": "Temples −25% stone cost, +2 garrisoned heal rate."
+}

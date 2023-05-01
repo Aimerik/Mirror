@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="units/brit/chariot_javelineer_a">
+  <Identity>
+    <Rank>Elite</Rank>
+  </Identity>
+  <Promotion disable=""/>
+  <VisualActor>
+    <Actor>units/britons/chariot_javelinist_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

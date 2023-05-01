@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_formation">
+  <Formation>
+    <MinColumns>3</MinColumns>
+    <Sloppiness>0.5</Sloppiness>
+    <UnitSeparationDepthMultiplier>1.5</UnitSeparationDepthMultiplier>
+    <UnitSeparationWidthMultiplier>1.5</UnitSeparationWidthMultiplier>
+    <WidthDepthRatio>4</WidthDepthRatio>
+  </Formation>
+  <Identity>
+    <GenericName>Open Order</GenericName>
+    <Icon>formations/line_open.png</Icon>
+  </Identity>
+</Entity>
+

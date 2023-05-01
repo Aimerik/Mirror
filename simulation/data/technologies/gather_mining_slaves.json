@@ -1,0 +1,27 @@
+{
+	"genericName": "Slaves",
+	"specificName": {
+		"athen": "Andrapoda",
+		"mace": "Andrapoda",
+		"ptol": "Andrapoda",
+		"rome": "Servi",
+		"sele": "Andrapoda",
+		"spart": "Andrapoda"
+	},
+	"description": "Buy slaves to help your workers quarry stone. Increases stone gathering rates.",
+	"cost": {
+		"metal": 350,
+		"captive": 350
+	},
+	"supersedes": "gather_mining_servants",
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "mining_stone_02.png",
+	"researchTime": 60,
+	"tooltip": "Workers +20% stone gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/stone.rock", "multiply": 1.2 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

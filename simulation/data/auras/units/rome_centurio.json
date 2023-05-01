@@ -1,0 +1,10 @@
+{
+	"type": "range",
+     "radius": 20,
+	"affects": ["Melee Infantry"],
+	"modifications": [{ "value": "Resistance/Entity/Damage/Pierce", "add": 1 },
+	                  { "value": "Resistance/Entity/Damage/Hack", "add": 1 },
+	                  { "value": "Attack/Melee/Damage/Hack", "add": 1 }],
+	"auraName": "discipline",
+	"auraDescription": "+1 armour and attack for nearby Melee Infantry."
+}

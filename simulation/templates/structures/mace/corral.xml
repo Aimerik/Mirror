@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_resource_corral">
+  <Identity>
+    <Civ>mace</Civ>
+    <SpecificName>Epaulos</SpecificName>
+  </Identity>
+    <Trainer>
+    <Entities datatype="tokens">
+      -gaia/fauna_goat_trainable
+      gaia/fauna_sheep_trainable
+    </Entities>
+  </Trainer>   
+  <VisualActor>
+    <Actor>structures/hellenes/corral.xml</Actor>
+  </VisualActor>
+</Entity>

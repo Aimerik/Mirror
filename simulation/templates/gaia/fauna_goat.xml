@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_herd_domestic">
+  <Cost>
+    <BuildTime>12</BuildTime>
+    <Resources>
+      <food>40</food>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="1.5" depth="3.0"/>
+    <Height>2.0</Height>
+  </Footprint>
+  <Health>
+    <Max>40</Max>
+  </Health>
+  <Identity>
+    <GenericName>Goat</GenericName>
+    <SpecificName>Capra aegagrus hircus</SpecificName>
+    <Icon>gaia/fauna_goat.png</Icon>
+  </Identity>
+  <ResourceSupply>
+    <Max>100</Max>
+    <MaxGatherers>2</MaxGatherers>
+  </ResourceSupply>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/goat_select.xml</select>
+      <order_walk>actor/fauna/animal/goat_order.xml</order_walk>
+      <death>actor/fauna/death/goat.xml</death>
+      <trained>actor/fauna/animal/goat_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <StatusBars>
+    <HeightOffset>3.0</HeightOffset>
+  </StatusBars>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.45</WalkSpeed>
+  </UnitMotion>
+  <VisualActor>
+    <Actor>fauna/goat.xml</Actor>
+  </VisualActor>
+</Entity>

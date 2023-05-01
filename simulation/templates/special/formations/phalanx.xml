@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_formation">
+  <Formation>
+    <AnimationVariants>
+      1..1,1..-1: phalanx_front;
+      2..2,1..-1: phalanx_mid;
+      3..-1,1..-1: phalanx_back
+    </AnimationVariants>
+    <DisabledTooltip>Infantry Hoplites only, requires at least 10.</DisabledTooltip>
+    <MaxColumns>20</MaxColumns>
+    <MaxRows>8</MaxRows>
+    <MinColumns>5</MinColumns>
+    <RequiredMemberCount>10</RequiredMemberCount>
+    <ShiftRows>true</ShiftRows>
+    <UnitSeparationDepthMultiplier>0.6</UnitSeparationDepthMultiplier>
+    <UnitSeparationWidthMultiplier>0.6</UnitSeparationWidthMultiplier>
+    <WidthDepthRatio>4</WidthDepthRatio>
+  </Formation>
+  <FormationAttack>
+    <CanAttackAsFormation>false</CanAttackAsFormation>
+  </FormationAttack>
+  <Identity>
+    <GenericName>Phalanx</GenericName>
+    <Icon>formations/phalanx.png</Icon>
+  </Identity>
+</Entity>
+

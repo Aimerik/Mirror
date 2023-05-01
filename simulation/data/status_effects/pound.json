@@ -1,0 +1,7 @@
+{
+	"applierTooltip": "This unit causes pound damage.",
+	"code": "Pound",
+	"icon": "pound",
+	"statusName": "Pound",
+	"receiverTooltip": "This unit is pound."
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity>
+  <Formation>
+    <AnimationVariants/>
+    <DisabledTooltip>Requires at least 2 Soldiers or Siege Engines.</DisabledTooltip>
+    <FormationShape>square</FormationShape>
+    <RequiredMemberCount>2</RequiredMemberCount>
+    <ShiftRows>false</ShiftRows>
+    <Sloppiness>0</Sloppiness>
+    <SortingClasses>Hero Champion Cavalry Melee Ranged</SortingClasses>
+    <SpeedMultiplier>1</SpeedMultiplier>
+    <UnitSeparationDepthMultiplier>1</UnitSeparationDepthMultiplier>
+    <UnitSeparationWidthMultiplier>1</UnitSeparationWidthMultiplier>
+    <WidthDepthRatio>1</WidthDepthRatio>
+  </Formation>
+  <FormationAttack>
+    <CanAttackAsFormation>false</CanAttackAsFormation>
+  </FormationAttack>
+  <Identity/>
+  <Obstruction>
+    <Active>true</Active>
+    <BlockConstruction>false</BlockConstruction>
+    <BlockFoundation>false</BlockFoundation>
+    <BlockMovement>false</BlockMovement>
+    <BlockPathfinding>false</BlockPathfinding>
+    <DeleteUponConstruction>false</DeleteUponConstruction>
+    <DisableBlockMovement>false</DisableBlockMovement>
+    <DisableBlockPathfinding>false</DisableBlockPathfinding>
+    <Unit/>
+  </Obstruction>
+  <Ownership/>
+  <Position>
+    <Altitude>0</Altitude>
+    <Anchor>upright</Anchor>
+    <FloatDepth>0</FloatDepth>
+    <Floating>false</Floating>
+    <TurnRate>10</TurnRate>
+  </Position>
+  <Trader>
+    <GainMultiplier>0.75</GainMultiplier>
+  </Trader>
+  <UnitAI>
+    <CanGuard>true</CanGuard>
+    <CanPatrol>true</CanPatrol>
+    <DefaultStance>aggressive</DefaultStance>
+    <FleeDistance>12.0</FleeDistance>
+    <FormationController>true</FormationController>
+    <PatrolWaitTime>2</PatrolWaitTime>
+  </UnitAI>
+  <UnitMotion>
+    <FormationController>true</FormationController>
+    <PassabilityClass>large</PassabilityClass>
+    <RunMultiplier>100.0</RunMultiplier>
+    <WalkSpeed>1.0</WalkSpeed>
+  </UnitMotion>
+</Entity>
+

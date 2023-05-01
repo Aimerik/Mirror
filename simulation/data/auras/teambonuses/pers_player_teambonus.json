@@ -1,0 +1,10 @@
+{
+	"type": "global",
+	"affects": ["Trader !Ship"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Trader/GainMultiplier", "multiply": 1.15 }
+	],
+	"auraName": "The Royal Road",
+	"auraDescription": "Land Traders +15% trade gain."
+}

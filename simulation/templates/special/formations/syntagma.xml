@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_formation">
+  <Formation>
+    <AnimationVariants>
+      1..2,1..-1: syntagma_front;
+      3..3,1..-1: syntagma_01;
+      4..4,1..-1: syntagma_02;
+      5..5,1..-1: syntagma_03;
+      6..6,1..-1: syntagma_04;
+      7...-1,1..-1: syntagma_back
+    </AnimationVariants>
+    <DisabledTooltip>Infantry Pikemen only, requires at least 16.</DisabledTooltip>
+    <FormationShape>square</FormationShape>
+    <MaxColumns>8</MaxColumns>
+    <MaxRows>9</MaxRows>
+    <MinColumns>4</MinColumns>
+    <RequiredMemberCount>16</RequiredMemberCount>
+    <ShiftRows>true</ShiftRows>
+    <Sloppiness>0.15</Sloppiness>
+    <SortingClasses>Hero Champion Elite Advanced Basic</SortingClasses>
+    <UnitSeparationDepthMultiplier>0.55</UnitSeparationDepthMultiplier>
+    <UnitSeparationWidthMultiplier>0.86</UnitSeparationWidthMultiplier>
+    <WidthDepthRatio>1</WidthDepthRatio>
+  </Formation>
+  <FormationAttack>
+    <CanAttackAsFormation>false</CanAttackAsFormation>
+  </FormationAttack>
+  <Identity>
+    <GenericName>Syntagma</GenericName>
+    <Icon>formations/syntagma.png</Icon>
+  </Identity>
+</Entity>
+

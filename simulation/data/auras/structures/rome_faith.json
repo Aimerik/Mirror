@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Soldier", "Siege", "Ship"],
+	"modifications": [
+		{ "value": "Looter/Resource/faith", "multiply": 1.5 }
+	],
+	"auraName": "To please Mars",
+	"auraDescription": "Soldier, Siege Engines, and Ships gain +50% faith loot."
+}

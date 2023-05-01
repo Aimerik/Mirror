@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Structure"],
+	"modifications": [
+		{ "value": "TerritoryInfluence/Radius", "multiply": 1.1 }
+	],
+	"auraName": "Imperialism",
+	"auraDescription": "Structures +10% territory influence radius."
+}

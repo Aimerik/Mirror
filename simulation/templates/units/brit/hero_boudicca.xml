@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_hero_chariot">
+  <Auras datatype="tokens">
+    units/heroes/brit_hero_boudicca
+  </Auras>
+ <Attack>
+    <Ranged>
+      <AttackName>Javelin</AttackName>
+      <Damage>
+        <Pierce>15</Pierce>
+      </Damage>
+      <Bonuses>
+  <Bonus1>
+          <Classes>Elephant</Classes>
+          <Multiplier>2</Multiplier>
+  </Bonus1>
+  <Bonus2>
+          <Classes>Scythed</Classes>
+          <Multiplier>2</Multiplier>
+  </Bonus2>
+      </Bonuses> 
+      <MaxRange>25</MaxRange>
+      <MinRange>5</MinRange>
+      <PrepareTime>400</PrepareTime>
+      <RepeatTime>1250</RepeatTime>
+      <Projectile>
+        <Speed>70</Speed>
+        <Spread>1.6</Spread>
+        <Gravity>35</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="5"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+  </Attack>  
+  <Footprint replace="">
+    <Square width="5.0" depth="10.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>brit</Civ>
+    <Phenotype>female</Phenotype>
+    <GenericName>Boudicca</GenericName>
+    <SpecificName>Boudica</SpecificName>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+    <Icon>units/brit_hero_boudicca.png</Icon>
+  </Identity>      
+  <Selectable>
+    <Overlay>
+      <Shape>
+        <Circle radius="5.0"/>
+      </Shape>
+    </Overlay>
+  </Selectable>
+  <VisualActor>
+    <Actor>units/britons/hero_chariot_javelinist_boudicca_m.xml</Actor>
+  </VisualActor>
+</Entity>

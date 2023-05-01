@@ -1,0 +1,66 @@
+{
+	"Code": "mace",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Rise_of_Macedon.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "In_the_Shadow_of_Olympus.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Elysian_Fields.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/mace/wallset_stone"
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/mace/civil_centre"
+		},
+		{
+			"Template": "units/mace/support_slave",
+			"Count": 4
+		},
+		{
+			"Template": "units/mace/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/mace/cavalry_scout"
+		}
+	],
+	"AINames": [
+		"Alexander the Great",
+		"Philip II",
+		"Antipater",
+		"Philip IV",
+		"Lysander",
+		"Lysimachus",
+		"Pyrrhus of Epirus",
+		"Antigonus II Gonatas",
+		"Demetrius II Aetolicus",
+		"Philip V",
+		"Perseus",
+		"Craterus",
+		"Meleager"
+	],
+	"SkirmishReplacements": {
+		"skirmish/units/default_cavalry": "units/mace/cavalry_scout",
+		"skirmish/units/default_infantry_melee_b": "units/mace/support_citizen",
+		"skirmish/units/default_infantry_ranged_b": "units/mace/support_citizen",
+		"skirmish/units/default_support_female_citizen": "units/mace/support_slave",
+		"skirmish/structures/default_house_10": "structures/{civ}/house"
+	},
+	"SelectableInGameSetup": true
+}

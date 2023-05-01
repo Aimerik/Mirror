@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_ship">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>9</Pierce>
+      </Damage>
+       <Bonuses>
+      <Bonus1>
+          <Classes>Ship</Classes>
+          <Multiplier>4</Multiplier>
+      </Bonus1>
+      </Bonuses>           
+      <MaxRange>60</MaxRange>
+      <PrepareTime>1000</PrepareTime>
+      <RepeatTime>2000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>2</Spread>
+        <Gravity>50</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="3"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Ship Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <DefaultArrowCount>8</DefaultArrowCount>
+    <MaxArrowCount>25</MaxArrowCount>
+    <GarrisonArrowMultiplier>1</GarrisonArrowMultiplier>
+    <GarrisonArrowClasses>Infantry Cavalry</GarrisonArrowClasses>
+  </BuildingAI>
+  <Cost>
+    <Population>8</Population>
+    <BuildTime>50</BuildTime>
+    <Resources>
+      <wood>550</wood>
+      <metal>300</metal>
+      <stone>0</stone>      
+    </Resources>
+  </Cost>
+  <GarrisonHolder>
+    <Max>50</Max>
+    <List datatype="tokens">Support Soldier Siege</List>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+  </Health>
+  <Identity>
+    <GenericName>Heavy Warship</GenericName>
+    <Tooltip>Garrison units for transport and to increase firepower.</Tooltip>
+    <VisibleClasses datatype="tokens">Ranged Warship Quinquereme</VisibleClasses>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>200</xp>
+    <wood>120</wood>
+    <metal>60</metal>
+    <captive>25</captive> 
+    <faith>70</faith>           
+  </Loot>
+  <Position>
+    <TurnRate>4</TurnRate>
+  </Position>
+  <Sound>
+    <SoundGroups>
+      <attack_ranged>attack/siege/ballist_attack.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <WalkSpeed op="mul">1.8</WalkSpeed>
+  </UnitMotion>
+  <Vision>
+    <Range>110</Range>
+  </Vision>
+</Entity>

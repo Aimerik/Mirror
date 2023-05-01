@@ -1,0 +1,25 @@
+{
+	"genericName": "Dynasty Phase",
+	"specificName": {
+		
+	},
+	"supersedes": "phase_city_athen",
+	"replaces": ["phase_dynasty"],
+	"icon": "phase_dynasty.png",
+	"description": "Moves your civilization from urbanism to dynasty, unlocking powerful technologies and abilities not available in earlier phases of expansion.",
+	"cost": {		
+		"food": 1200,		
+		"metal": 700,
+		"faith": 500
+	},
+	"requirements": {"entity": {"class": "City", "number": 3} },
+	"requirementsTooltip": "Requires 3 City Phase structures to be built.",
+	"researchTime": 100,
+	"tooltip": "Advance to dynasty Phase, which unlocks powerful technologies and abilities. Territory radius for Civic Centers increased by a final +25%.",
+	"modifications": [
+		{"value": "TerritoryInfluence/Radius", "multiply": 1.25, "affects": "CivCentre"},
+		{"value": "Vision/Range", "multiply": 1.25, "affects": "CivCentre"},
+		{ "value": "Promotion/RequiredXp", "replace": 0, "affects": "CitizenSoldier Basic" }			
+	],
+	"soundComplete": "interface/alarm/alarm_phase.xml"
+}

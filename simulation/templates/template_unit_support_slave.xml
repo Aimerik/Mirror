@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="builder|template_unit_support">
+  <Cost>
+    <Population>1</Population>
+    <BuildTime>15</BuildTime>
+    <Resources>    
+    <captive>5</captive>    
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>70</Max>
+  </Health>
+  <Identity>
+    <GenericName>Slave</GenericName>
+    <SelectionGroupName>template_unit_support_slave</SelectionGroupName>
+    <Tooltip>The miserable laborers, under the pressure of the whip, will work harder to mine ores and rocks.</Tooltip>
+    <VisibleClasses datatype="tokens">Worker Slave</VisibleClasses>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>10</xp>
+  </Loot>
+  <ResourceGatherer>
+    <MaxDistance>2.0</MaxDistance>
+    <BaseSpeed>1.0</BaseSpeed>
+    <Rates>
+      <food.fruit>1.0</food.fruit>
+      <food.grain>0.7</food.grain>
+      <wood.tree>1.0</wood.tree>
+      <wood.ruins>3</wood.ruins>
+      <stone.rock>0.7</stone.rock>
+      <stone.ruins>2.5</stone.ruins>
+      <metal.ore>0.7</metal.ore>
+    </Rates>
+    <Capacities>
+      <food>10</food>
+      <wood>10</wood>
+      <stone>10</stone>
+      <metal>10</metal>
+    </Capacities>
+  </ResourceGatherer>
+  <TreasureCollector disable=""/>
+  <Sound>
+    <SoundGroups>
+      <build>resource/construction/con_wood.xml</build>
+      <gather_fruit>resource/foraging/forage_leaves.xml</gather_fruit>
+      <gather_grain>resource/farming/farm.xml</gather_grain>
+      <gather_wood>resource/lumbering/lumbering.xml</gather_wood>
+      <gather_stone>resource/mining/pickaxe.xml</gather_stone>
+      <gather_metal>resource/mining/mining.xml</gather_metal>
+      <invalid_building_placement>interface/alarm/alarm_invalid_building_placement.xml</invalid_building_placement>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <trained>actor/singlesteps/steps_gravel_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+</Entity>

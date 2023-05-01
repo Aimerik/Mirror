@@ -1,0 +1,9 @@
+{
+	"genericName": "Woad Warriors",
+	"autoResearch": true,	
+	"description": "The Britons, took up the practice of either making permanent marks on their body in the form of tattoos or temporarily painted their bodies with woad paint. The effect could be very frightening for opponents.",
+    "requirements": { "civ": "brit" },
+	"tooltip": "+15% attack for melee infantry.",
+	"modifications": [{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.15, "affects": "Melee" }],
+	"affects": ["Infantry"]
+}

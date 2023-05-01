@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_chariot_scythe">
+  <Footprint replace="">
+    <Square width="11.0" depth="11.0"/>
+    <Height>6.0</Height>
+  </Footprint> 
+  <Identity>
+    <Civ>pers</Civ>
+    <Lang>persian</Lang>
+    <GenericName>Persia Scythed Chariot</GenericName>
+    <SpecificName>Raθa Persía</SpecificName>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+    <Icon>units/pers_chariot_archer.png</Icon>
+    <RequiredTechnology>phase_city</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>units/persians/chariot_archer_e_m.xml</Actor>
+  </VisualActor>
+</Entity>

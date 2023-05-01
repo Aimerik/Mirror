@@ -1,0 +1,22 @@
+{
+	"genericName": "Advanced Catapult",
+	"description": "Advanced technologies improve catapult efficiency.",
+	"cost": {
+		"wood": 350,
+		"metal": 350
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "engineering.png",
+	"researchTime": 40,
+	"tooltip": "Battering Catapult +25% attack crush damage.",
+	"modifications": [
+		{ "value": "Attack/Ranged/Damage/Crush", "multiply": 1.25 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

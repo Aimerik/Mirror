@@ -1,0 +1,17 @@
+{
+	"genericName": "cast iron",
+	"autoResearch": true,
+	"description": "China took the lead in mastering the cast iron process and it was widely used in the manufacture of production tools.",
+	"requirements": {
+		"any": [
+			{ "civ": "han" }
+		]
+	},
+	"icon": "wooden_buildings.png",
+	"tooltip": "Economic structure −15% technology metal costs and research time.",
+	"modifications": [
+		{ "value": "Researcher/TechCostMultiplier/metal", "multiply": 0.85 },	
+		{ "value": "Researcher/TechCostMultiplier/time", "multiply": 0.85 }
+	],
+	"affects": ["Economic"]
+}

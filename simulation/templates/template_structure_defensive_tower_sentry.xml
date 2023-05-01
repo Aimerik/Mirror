@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_defensive_tower">
+  <Attack>
+    <Ranged>
+      <Origin>
+        <X>0</X>
+        <Y>12</Y>
+        <Z>0</Z>
+      </Origin>
+    </Ranged>
+  </Attack>
+  <BuildingAI>
+    <MaxArrowCount>3</MaxArrowCount>
+  </BuildingAI>
+  <Cost>
+    <BuildTime>40</BuildTime>
+    <Resources>
+      <wood>100</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Height>9.0</Height>
+    <Square width="9.5" depth="8.5"/>
+  </Footprint>
+  <GarrisonHolder>
+    <BuffHeal>1</BuffHeal>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <EjectHealth>0.1</EjectHealth>
+    <List datatype="tokens">builder Infantry</List>
+    <LoadingRange>1</LoadingRange>
+    <Max>5</Max>
+  </GarrisonHolder>
+  <Health>
+    <Max>400</Max>
+  </Health>
+  <Identity>
+    <GenericName>Sentry Tower</GenericName>
+    <Icon>structures/sentry_tower.png</Icon>
+    <RequiredTechnology>phase_village</RequiredTechnology>
+    <SelectionGroupName>template_structure_defensive_tower_sentry</SelectionGroupName>
+    <Tooltip>Garrison Infantry for additional arrows. Needs the “Murder Holes” technology to protect its foot.</Tooltip>
+    <VisibleClasses datatype="tokens">SentryTower</VisibleClasses>
+  </Identity>
+  <Loot>
+    <wood>20</wood>
+  </Loot>
+  <Obstruction>
+    <Static width="9.0" depth="7.5"/>
+  </Obstruction>
+  <TerritoryInfluence>
+    <Radius>16</Radius>
+    <Root>true</Root>
+    <Weight>30000</Weight>
+  </TerritoryInfluence>
+  <Upgrade>
+    <Tower>
+      <Cost>
+        <stone>100</stone>
+        <wood>50</wood>
+      </Cost>
+      <Entity>structures/{civ}/defense_tower</Entity>
+      <RequiredTechnology>phase_town</RequiredTechnology>
+      <Time>100</Time>
+      <Tooltip>Reinforce with stone and upgrade to a defense tower.</Tooltip>
+      <Variant>upgrading</Variant>
+    </Tower>
+  </Upgrade>
+</Entity>
+

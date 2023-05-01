@@ -1,0 +1,18 @@
+{
+	"genericName": "Training",
+	"description": "Significantly increase training speed of cavalry by training them in large batches or squadrons.",
+	"cost": {
+		"food": 1000,
+		"metal":350		
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "horseshoe_gold.png",
+	"researchTime": 40,
+	"tooltip": "Stables −20% batch training time.",
+	"modifications": [
+		{ "value": "Trainer/BatchTimeModifier", "add": -0.2 }
+	],
+	"affects": ["Stable"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

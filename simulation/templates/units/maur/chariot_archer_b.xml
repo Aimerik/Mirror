@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_chariot_archer">
+  <Footprint replace="">
+    <Square width="8.0" depth="11.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <Lang>mauryas</Lang>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+    <SelectionGroupName>units/maur/chariot_archer_b</SelectionGroupName>
+    <GenericName>Chariot</GenericName>
+    <SpecificName>Rath</SpecificName>
+    <Icon>units/maur_champion_chariot.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/maur/chariot_archer_a</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/mauryas/chariot_archer_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

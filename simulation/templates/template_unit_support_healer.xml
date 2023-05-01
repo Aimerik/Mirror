@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_support">
+
+  <Cost>
+  <BuildTime>12</BuildTime>
+  <Population>1</Population>
+    <Resources>
+      <food>200</food>
+      <metal>50</metal>   
+      <faith>50</faith>     
+    </Resources>
+  </Cost>
+  <Heal>
+    <Range>15</Range>
+    <RangeOverlay>
+      <LineTexture>heal_overlay_range.png</LineTexture>
+      <LineTextureMask>heal_overlay_range_mask.png</LineTextureMask>
+      <LineThickness>0.35</LineThickness>
+    </RangeOverlay>
+    <Health>7</Health>
+    <Interval>1500</Interval>
+    <UnhealableClasses datatype="tokens"/>
+    <HealableClasses datatype="tokens">Human</HealableClasses>
+  </Heal>
+  <Health>
+    <Max>100</Max>
+  </Health>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>1</Hack>
+        <Pierce>1</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance>    
+  <Identity>
+    <Classes datatype="tokens">-ConquestCritical</Classes>
+    <VisibleClasses datatype="tokens">Healer</VisibleClasses>
+    <GenericName>Healer</GenericName>
+    <SelectionGroupName>template_unit_support_healer</SelectionGroupName>
+    <Rank>Basic</Rank>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+    <Tooltip>Heal units.</Tooltip>
+  </Identity>
+  <Loot>
+    <xp>8</xp>    
+  </Loot>
+  <Promotion>
+    <RequiredXp>150</RequiredXp>
+  </Promotion>
+  <Selectable>
+    <Overlay>
+      <Texture>
+        <MainTexture>128x128/plus.png</MainTexture>
+        <MainTextureMask>128x128/plus_mask.png</MainTextureMask>
+      </Texture>
+    </Overlay>
+  </Selectable>
+  <Sound>
+    <SoundGroups>
+      <order_heal>voice/{lang}/civ/civ_{phenotype}_heal.xml</order_heal>
+      <trained>interface/alarm/alarm_create_priest.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <Vision>
+    <Range>30</Range>
+  </Vision>
+</Entity>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_melee">
+  <TrainingRestrictions>
+    <Category>Scout</Category>
+  </TrainingRestrictions>  
+  <Attack>
+    <Melee>
+      <AttackName>Dagger</AttackName>
+      <Damage>
+        <Hack>5.0</Hack>
+        <Pierce>0</Pierce>
+        <Crush>0.0</Crush>
+      </Damage>
+      <MaxRange>3</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+    </Melee>
+  </Attack>
+  <Builder>
+    <Rate>1.0</Rate>
+    <Entities datatype="tokens">
+      structures/{civ}/outpost
+    </Entities>
+  </Builder>
+  <Promotion disable=""/>  
+  <Cost>
+    <BuildTime>15</BuildTime>
+    <Resources>
+      <food>150</food>
+      <metal>0</metal>
+    </Resources>
+  </Cost>
+  <Health>
+    <Max>200</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Scout</VisibleClasses>
+    <GenericName>Scout Cavalry</GenericName>
+    <History>Scouting unit, outpost builder.</History>
+	 <RequiredTechnology>phase_village</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <xp>80</xp>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>2</Hack>
+        <Pierce>2</Pierce>
+        <Thump>2</Thump>          
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/sword_attack.xml</attack_melee>
+      <order_build>voice/{lang}/civ/civ_{phenotype}_build.xml</order_build>
+      <order_repair>voice/{lang}/civ/civ_{phenotype}_repair.xml</order_repair>
+      <build>resource/construction/con_wood.xml</build>
+      <invalid_building_placement>interface/alarm/alarm_invalid_building_placement.xml</invalid_building_placement>
+    </SoundGroups>
+  </Sound>
+  <TrainingRestrictions>
+    <Category>Scout</Category>
+  </TrainingRestrictions>
+  <UnitAI>
+    <DefaultStance>standground</DefaultStance>
+  </UnitAI>
+  <VisualActor>
+    <Actor>units/hellenes/cavalry_scout.xml</Actor>
+  </VisualActor>
+</Entity>

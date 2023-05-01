@@ -1,0 +1,7 @@
+{
+	"type": "global",
+	"affects": ["Warship"],
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.7}],
+	"auraDescription": "Warship −30% construction time.",
+	"auraName": "Skilled shipbuilder"
+}

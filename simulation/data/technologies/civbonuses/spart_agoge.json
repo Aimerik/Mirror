@@ -1,0 +1,20 @@
+{
+	"genericName": "The Agoge",
+	"description": "Spartans were housed and trained from a young age to be superlative warriors and to endure any hardship a military life can give them.",
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{ "civ": "spart" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"autoResearch": true,
+	"tooltip": "Champion Infantry Spearmen +15% Attack and +2 Hack Resistance, but +20% training time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 1.2 },
+        { "value": "Attack/Melee/Damage/Hack", "multiply": 1.15, "affects": "Melee" },
+        { "value": "Resistance/Entity/Damage/Hack", "add": 2 }
+	],
+	"affects": ["Champion Infantry Spearman"]
+
+}

@@ -1,0 +1,13 @@
+{
+    "code": "faith",
+    "name": "Faith",
+    "description": "Obtained by building religious facilities, training medics, and killing enemies, and used to train heroes, elites, build wonders, or research technologies.",
+    "order": 6,
+    "subtypes": {
+      "worship": "Worship",
+      "victory":"Victory"
+    },
+    "properties": ["zeroResourceStart"],
+    "truePrice": 100,
+    "aiAnalysisInfluenceGroup": "ignore"
+  }

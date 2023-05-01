@@ -1,0 +1,26 @@
+{
+	"autoResearch": true,
+	"icon": "upgrade_elite.png",
+	"tooltip": "Elite units +20% training time, +10% health, +0.8 capture attack strength, +20% loot; Healers +5 healing strength; Melee units +1 hack/pierce/thump resistance，+10% attack damage; Ranged units −20% spread，+1 pierce resistance，+1 attack damage.",
+	"modifications": [
+		{ "value": "Attack/Capture/Capture", "add": 0.8 },
+		{ "value": "Attack/Melee/Damage/Hack", "multiply": 1.1, "affects": "Melee" },
+		{ "value": "Attack/Melee/Damage/Thump", "multiply": 1.1, "affects": "Melee" },
+		{ "value": "Attack/Ranged/Spread", "multiply": 0.8, "affects": "Ranged" },
+		{ "value": "Attack/Ranged/Damage/Pierce", "add": 1, "affects": "Ranged" },			
+		{ "value": "Cost/BuildTime", "multiply": 1.2 },	
+		{ "value": "Health/Max", "multiply": 1.1 },					
+		{ "value": "Heal/Health", "add": 5, "affects": "Healer" },
+		{ "value": "Loot/food", "multiply": 1.2 },
+		{ "value": "Loot/wood", "multiply": 1.2 },
+		{ "value": "Loot/stone", "multiply": 1.2 },
+		{ "value": "Loot/metal", "multiply": 1.2 },
+		{ "value": "Loot/faith", "multiply": 1.2 },		
+		{ "value": "Loot/xp", "multiply": 1.2 },
+		{ "value": "Resistance/Entity/Damage/Hack", "add": 1, "affects": "Melee" },
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1, "affects": "Melee" },
+		{ "value": "Resistance/Entity/Damage/Thump", "add": 1, "affects": "Melee" },	
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 1, "affects": "Ranged" }
+	],
+	"affects": ["Elite Unit"]
+}

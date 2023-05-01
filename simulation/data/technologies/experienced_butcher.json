@@ -1,0 +1,18 @@
+{
+	"genericName": "experienced butcher",
+	"description": "Let an experienced butcher teach you how to slaughter animals quickly.",
+	"cost": {
+		"metal": 150,
+		"food": 150
+	},
+	"requirements": { "tech": "phase_village" },
+	"requirementsTooltip": "Unlocked in Village Phase.",
+	"icon": "meat.png",
+	"researchTime": 60,
+	"tooltip": "Workers +20% meat gather rate.",
+	"modifications": [
+		{ "value": "ResourceGatherer/Rates/food.meat", "multiply": 1.2 }
+	],
+	"affects": ["Worker"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

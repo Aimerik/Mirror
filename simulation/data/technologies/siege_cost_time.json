@@ -1,0 +1,18 @@
+{
+	"genericName": "Skilled carpenter",
+	"description": "Employ skilled carpenter with specialized tools to speed up sieges construction.",
+	"cost": {
+		"food": 1500,
+		"metal":500
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "military_engineers.png",
+	"researchTime": 40,
+	"tooltip": "Siege Engines −40% construction time.",
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.6 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

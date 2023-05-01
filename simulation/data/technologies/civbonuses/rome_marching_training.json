@@ -1,0 +1,12 @@
+{
+	"genericName": "marching training",
+	"autoResearch": true,		
+	"description": "Physical training allows the infantry to march quickly.",
+	"requirements": {"any": [
+			{ "civ": "rome" }
+		]
+	},
+	"tooltip": "+10% infantry walk speed.",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.1}],
+	"affects": ["Infantry"]
+}

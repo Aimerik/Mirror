@@ -1,0 +1,11 @@
+{
+	"type": "global",
+	"affects": ["Infantry Javelineer","Slinger"],
+	"affectedPlayers": ["MutualAlly"],
+	"modifications": [
+		{ "value": "Cost/BuildTime", "multiply": 0.75 },
+		{ "value": "Promotion/RequiredXp", "multiply": 0.5 }
+	],
+	"auraName": "Guerrilla warfare",
+	"auraDescription": "slinger and javelineer −25% training time and −50% promotion experience."
+}

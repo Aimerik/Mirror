@@ -1,0 +1,18 @@
+{
+	"genericName": "State Religion",
+	"description": "Establishing the orthodoxy of religion can make monks more conscientious.",
+	"cost": {"food": 500, "wood": 0, "stone": 0, "metal": 500, "faith":0 },
+	"requirements": {
+			"entity": {
+			"class": "Temple",
+			"number": 3
+		}
+	},	
+	"icon": "healing_range.png",
+	"researchTime": 120,
+	"tooltip": "+7 healing HP, +10 vision range for healers，three temple need to be built.",
+	"modifications": [{"value": "Vision/Range", "add": 10.0},
+				  {"value": "Heal/HP", "add": 7}],
+	"affects": ["Healer"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

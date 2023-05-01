@@ -1,0 +1,24 @@
+{
+	"genericName": "Hellenistic Metropolis",
+	"description": "Beginning with Alexander, the Hellenistic monarchs founded many cities throughout their empires, where Greek culture and art blended with local customs to create the motley Hellenistic civilization.",
+	"autoResearch": true,
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" },
+			{
+				"any": [
+					{ "civ": "mace" },
+					{ "civ": "ptol" },
+					{ "civ": "sele" }
+				]
+			}
+		]
+	},
+	"tooltip": "Civic Centers +50% health and capture points, double default arrows.",
+	"modifications": [
+		{ "value": "BuildingAI/DefaultArrowCount", "multiply": 1.5 },
+		{ "value": "Capturable/CapturePoints", "multiply": 1.5 },
+		{ "value": "Health/Max", "multiply": 1.5 }
+	],
+	"affects": ["CivCentre !Colony !Naval"]
+}

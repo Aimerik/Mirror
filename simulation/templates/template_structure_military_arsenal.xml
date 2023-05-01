@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military">
+  <Auras datatype="tokens">
+    structures/arsenal_repair
+  </Auras>
+  <Cost>
+    <BuildTime>200</BuildTime>
+    <Resources>
+      <wood>300</wood>
+      <stone>0</stone>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="30.0" depth="30.0"/>
+    <Height>12.0</Height>
+  </Footprint>
+  <GarrisonHolder>
+    <Max>15</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Siege</List>
+    <BuffHeal>0</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder>
+  <Health>
+    <Max>2000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_5x5</SpawnEntityOnDeath>
+  </Health>
+  <Identity>
+    <GenericName>Arsenal</GenericName>
+    <SelectionGroupName>template_structure_military_arsenal</SelectionGroupName>
+    <Tooltip>Train Champion Infantry Crossbowmen, construct Siege Engines, and research Siege Engine technologies.</Tooltip>
+    <VisibleClasses datatype="tokens">Town Arsenal</VisibleClasses>
+    <Icon>structures/siege_workshop.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <Loot>
+    <wood>60</wood>
+  </Loot>
+  <Obstruction>
+    <Static width="29.0" depth="29.0"/>
+  </Obstruction>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Fire>4</Fire>
+      </Damage>
+    </Entity>
+  </Resistance>  
+  <Researcher>
+    <Technologies datatype="tokens">
+      ram_attack
+      siege_resistance
+      attack_capture_siege_ladders
+    </Technologies>
+  </Researcher>
+  <Sound>
+    <SoundGroups>
+      <constructed>interface/complete/building/complete_barracks.xml</constructed>
+      <select>interface/select/building/sel_barracks.xml</select>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>false</Root>
+    <Radius>38</Radius>
+  </TerritoryInfluence>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/siege_ram
+      units/{civ}/siege_tower
+      units/{civ}/siege_scorpio_packed
+      units/{civ}/siege_polybolos_packed
+      units/{civ}/siege_oxybeles_packed
+      units/{civ}/siege_lithobolos_packed
+      units/{civ}/siege_ballista_packed
+    </Entities>
+  </Trainer>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <FoundationActor>structures/fndn_8x8.xml</FoundationActor>
+  </VisualActor>
+</Entity>

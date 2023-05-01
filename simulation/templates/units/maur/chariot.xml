@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged_archer">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>8</Pierce>
+      </Damage>
+      <MaxRange>60</MaxRange>
+      <MinRange>0</MinRange>      
+      <PrepareTime>800</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>1</Spread>
+        <Gravity>50</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="5"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+  </Attack>  
+  <Cost>
+    <Population>3</Population>    
+    <Resources>
+      <food>300</food>
+      <wood>60</wood> 
+      <metal>30</metal>
+    </Resources>
+  </Cost>  
+   <Loot>
+    <captive>2</captive>       
+  </Loot>   
+  <Health>
+    <Max>300</Max>
+  </Health> 
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>4</Hack>
+        <Thump>4</Thump>        
+        <Pierce>4</Pierce>
+      </Damage>
+    </Entity>
+  </Resistance> 
+  <UnitMotion>
+    <WalkSpeed op="mul">0.95</WalkSpeed>
+  </UnitMotion>     
+  <Footprint replace="">
+    <Square width="8.0" depth="11.0"/>
+    <Height>6.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>maur</Civ>
+    <GenericName>War Chariot</GenericName>
+    <SpecificName>Rath</SpecificName>
+    <SelectionGroupName>units/maur/chariot</SelectionGroupName>
+    <VisibleClasses datatype="tokens">Chariot</VisibleClasses>
+    <Icon>units/maur_champion_chariot.png</Icon>
+    <RequiredTechnology>phase_town</RequiredTechnology>
+  </Identity>
+  <VisualActor>
+    <Actor>units/mauryas/chariot_archer_c_m.xml</Actor>
+  </VisualActor>
+</Entity>

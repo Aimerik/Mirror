@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_formation">
+  <Formation>
+    <CenterGap>12</CenterGap>
+    <DisabledTooltip>Requires at least 8 Soldiers or Siege engines.</DisabledTooltip>
+    <FormationShape>square</FormationShape>
+    <RequiredMemberCount>8</RequiredMemberCount>
+    <ShiftRows>true</ShiftRows>
+  </Formation>
+  <Identity>
+    <GenericName>Flank</GenericName>
+    <Icon>formations/flank.png</Icon>
+  </Identity>
+</Entity>
+

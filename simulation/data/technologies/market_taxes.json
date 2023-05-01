@@ -1,0 +1,13 @@
+{
+	"genericName": "Tax Collection",
+	"description": "The earliest known taxation system was that of Ancient Egypt around 3000 BC - 2800 BC, during the first dynasty of the Old Empire. The documentary records of the period state that the pharaoh held a biennial tour throughout the kingdom with the collection of tax revenues from his subjects. Other known records are receipts from real barns for the purchase of cereals, limestone and papyrus. Records on the principle of taxation are also described in the Bible. In Genesis.",
+	"cost": {"food": 1200, "wood": 0, "stone": 0, "metal": 600 },
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "coins.png",
+	"researchTime": 30,
+	"tooltip": "Each Market building adds a trickle of 120 metal per minute to the player.",
+	"modifications": [{"value": "ResourceTrickle/Rates/metal", "add": 2}],
+	"affects": ["BarterMarket"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

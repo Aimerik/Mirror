@@ -1,0 +1,70 @@
+{
+	"Code": "spart",
+	"Culture": "hele",
+	"Music": [
+		{
+			"File": "Helen_Leaves_Sparta.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Peaks_of_Atlas.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "Forging_a_City-State.ogg",
+			"Type": "peace"
+		},
+		{
+			"File": "The_Hellespont.ogg",
+			"Type": "peace"
+		}
+	],
+	"CivBonuses": [],
+	"WallSets": [
+		"structures/wallset_palisade",
+		"structures/spart/wallset_stone"
+	],
+	"StartEntities": [
+		{
+			"Template": "structures/spart/civil_centre"
+		},
+		{
+			"Template": "units/spart/support_slave",
+			"Count": 4
+		},
+		{
+			"Template": "units/spart/support_citizen",
+			"Count": 4
+		},
+		{
+			"Template": "units/spart/cavalry_scout"
+		}
+	],
+	"AINames": [
+		"Leonidas",
+		"Dienekes",
+		"Brasidas",
+		"Agis",
+		"Archidamus",
+		"Lysander",
+		"Pausanias",
+		"Agesilaus",
+		"Echestratus",
+		"Eurycrates",
+		"Eucleidas",
+		"Agesipolis"
+	],
+	"SkirmishReplacements": {
+		"skirmish/structures/default_house_10": "structures/{civ}/house",
+		"skirmish/units/default_cavalry": "units/spart/cavalry_scout",
+		"skirmish/units/default_infantry_melee_b": "units/spart/support_citizen",
+		"skirmish/units/default_infantry_ranged_b": "units/spart/support_citizen",
+		"skirmish/structures/default_wall_tower": "",
+		"skirmish/structures/default_wall_gate": "",
+		"skirmish/structures/default_wall_short": "",
+		"skirmish/structures/default_wall_medium": "",
+		"skirmish/structures/default_wall_long": "",
+		"skirmish/units/default_support_female_citizen": "units/spart/support_slave"
+	},
+	"SelectableInGameSetup": true
+}

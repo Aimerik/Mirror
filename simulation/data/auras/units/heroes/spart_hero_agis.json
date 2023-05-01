@@ -1,0 +1,10 @@
+{
+	"type": "global",
+      "affects": ["Barracks"],
+	"modifications": [{ "value": "Cost/Resources/wood", "multiply": 0.70 },
+				  { "value": "Cost/Resources/stone", "multiply": 0.70 },
+				  { "value": "Cost/BuildTime", "multiply": 0.70 }],
+	"auraName": "Spartan Education",
+	"auraDescription": "-30% cost and build time for barracks.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+}

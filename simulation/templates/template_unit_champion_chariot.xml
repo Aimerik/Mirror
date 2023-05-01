@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_champion_cavalry_ranged">
+  <Attack>
+    <Ranged>
+      <AttackName>Bow</AttackName>
+      <Damage>
+        <Pierce>12</Pierce>
+      </Damage>
+      <MaxRange>60</MaxRange>
+      <MinRange>0</MinRange>
+      <PrepareTime>600</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>100</Speed>
+        <Spread>1</Spread>
+        <Gravity>50</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="5"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Auras datatype="tokens">
+   units/maur_chariot_Incentive
+  </Auras>
+  <Cost>
+    <BuildTime>25</BuildTime>
+    <Population>4</Population>
+    <Resources>
+      <food>300</food>
+      <wood>80</wood>
+    </Resources>
+  </Cost>
+  <Garrisonable>
+    <Size>4</Size>
+  </Garrisonable>
+  <Health>
+    <Max>500</Max>
+  </Health>
+  <Identity>
+    <VisibleClasses datatype="tokens">Ranged Archer</VisibleClasses>
+    <GenericName>Champion Chariot Archer</GenericName>
+  </Identity>
+  <Loot>
+    <captive>2</captive>
+  </Loot>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Hack>8</Hack>
+        <Pierce>9</Pierce>
+        <Thump>8</Thump>
+      </Damage>
+    </Entity>
+  </Resistance>
+  <Sound>
+    <SoundGroups>
+      <attack_impact_ranged>attack/impact/arrow_impact.xml</attack_impact_ranged>
+      <attack_ranged>attack/weapon/bow_attack.xml</attack_ranged>
+    </SoundGroups>
+  </Sound>
+  <UnitAI>
+    <Formations datatype="tokens">
+      special/formations/skirmish
+    </Formations>
+  </UnitAI>
+  <UnitMotion>
+    <WalkSpeed op="mul">0.9</WalkSpeed>
+  </UnitMotion>
+</Entity>

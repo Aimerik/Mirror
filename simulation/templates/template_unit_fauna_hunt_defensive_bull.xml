@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_fauna_hunt_defensive">
+  <Loot>
+    <xp>50</xp>
+  </Loot>
+  <Sound>
+    <SoundGroups>
+      <select>actor/fauna/animal/cattle_select.xml</select>
+      <attack_melee>actor/fauna/animal/cattle_attack.xml</attack_melee>
+      <death>actor/fauna/animal/cattle_death.xml</death>
+      <order_walk>actor/fauna/animal/cattle_order.xml</order_walk>
+      <trained>actor/fauna/animal/cattle_trained.xml</trained>
+    </SoundGroups>
+  </Sound>
+  <UnitMotion>
+    <PassabilityClass>large</PassabilityClass>
+    <WalkSpeed op="mul">0.4</WalkSpeed>
+    <RunMultiplier>2.0</RunMultiplier>
+  </UnitMotion>
+</Entity>

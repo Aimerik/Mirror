@@ -1,0 +1,13 @@
+{
+	"genericName": "concentrate",
+	"description": "Well-fed horses run faster.",
+	"cost": {"food": 700, "wood": 0, "stone": 0, "metal": 300},
+	"requirements": {"tech": "phase_city"},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "horse.png",
+	"researchTime": 40,
+	"tooltip": "+10% cavalry walk speed.",
+	"modifications": [{"value": "UnitMotion/WalkSpeed", "multiply": 1.1}],
+	"affects": ["Cavalry"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

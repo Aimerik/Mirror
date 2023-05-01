@@ -1,0 +1,9 @@
+{
+	"type": "global",
+	"affects": ["Melee Infantry","Cavalry","Slinger"],
+	"modifications": [{ "value": "Cost/BuildTime", "multiply": 0.80}],
+	"auraName": "democracy",
+	"auraDescription": "-20% training time for citizen of athens.",
+	"overlayIcon": "art/textures/ui/session/auras/attack_bonus.png"
+
+}

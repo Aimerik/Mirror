@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Identity>
+    <Civ>gaul</Civ>
+    <SpecificName>Dunon</SpecificName>
+  </Identity>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry_swordsman
+      units/{civ}/champion_cavalry
+      units/{civ}/infantry_spearman_b 
+      units/{civ}/infantry_slinger_b         
+      units/{civ}/infantry_javelineer_b      
+      units/{civ}/cavalry_swordsman_b             
+      units/{civ}/cavalry_javelineer_b  
+    </Entities>
+  </Trainer>     
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_fortress.xml</select>
+      <constructed>interface/complete/building/complete_fortress.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <VisualActor>
+    <Actor>structures/gauls/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>16.8</Length>
+    <Indent>5.8</Indent>
+  </WallPiece>
+</Entity>

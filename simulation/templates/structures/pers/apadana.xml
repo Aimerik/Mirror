@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_special">
+  <BuildRestrictions>
+    <Category>Palace</Category>
+  </BuildRestrictions>
+  <Cost>
+    <BuildTime>300</BuildTime>
+    <Resources>
+      <stone>300</stone>
+      <wood>300</wood>
+    </Resources>
+  </Cost>
+  <Footprint>
+    <Square width="32.0" depth="32.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Health>
+    <Max>3000</Max>
+    <SpawnEntityOnDeath>decay|rubble/rubble_stone_6x6</SpawnEntityOnDeath>
+  </Health>
+  <ResourceDropsite>
+    <Types>food wood stone metal</Types>
+    <Sharable>true</Sharable>
+  </ResourceDropsite>  
+   <GarrisonHolder>
+    <Max>20</Max>
+    <EjectHealth>0.1</EjectHealth>
+    <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
+    <List datatype="tokens">Support Soldier ！Elephant</List>
+    <BuffHeal>3</BuffHeal>
+    <LoadingRange>2</LoadingRange>
+  </GarrisonHolder> 
+  <Identity>
+    <Civ>pers</Civ>
+    <GenericName>Throne Hall</GenericName>
+    <SpecificName>Apadāna</SpecificName>
+    <Tooltip>Train Champions and Heroes.</Tooltip>
+    <Classes datatype="tokens">ConquestCritical CivSpecific</Classes>
+    <VisibleClasses datatype="tokens">Town Palace</VisibleClasses>
+    <Icon>structures/palace.png</Icon>
+  </Identity>
+  <Loot>
+    <stone>60</stone>
+    <metal>40</metal>
+  </Loot>
+  <Obstruction>
+    <Static width="30.0" depth="30.0"/>
+  </Obstruction>
+    <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/hero_cyrus_ii
+      units/{civ}/hero_darius_i
+      units/{civ}/hero_xerxes_i
+    </Entities>
+  </Trainer>  
+  <ResourceTrickle>
+    <Rates>
+      <food>2</food>
+      <wood>2</wood>
+      <stone>1.5</stone>
+      <metal>1.5</metal>
+    </Rates>
+    <Interval>3000</Interval>
+  </ResourceTrickle>
+  <Sound>
+    <SoundGroups>
+      <select>interface/select/building/sel_broch.xml</select>
+      <constructed>interface/complete/building/complete_broch.xml</constructed>
+    </SoundGroups>
+  </Sound>
+  <TerritoryInfluence>
+    <Root>true</Root>
+    <Radius>48</Radius>
+    <Weight>40000</Weight>
+  </TerritoryInfluence>
+  <Vision>
+    <Range>40</Range>
+  </Vision>
+  <VisualActor>
+    <Actor>structures/persians/apadana.xml</Actor>
+    <FoundationActor>structures/fndn_8x9.xml</FoundationActor>
+  </VisualActor>
+</Entity>

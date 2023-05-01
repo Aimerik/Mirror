@@ -1,0 +1,10 @@
+{
+
+	"type": "range",
+	"radius": 10,
+	"affects": ["Soldier"],
+	"modifications": [{ "value": "Health/RegenRate", "add": 0.5 }],
+	"auraName": "Fede",
+	"auraDescription": "Heals nearby soldiers at 0.5 HP per second.",
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

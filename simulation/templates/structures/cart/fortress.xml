@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_structure_military_fortress">
+  <Footprint>
+    <Square width="30.0" depth="32.0"/>
+    <Height>8.0</Height>
+  </Footprint>
+  <Identity>
+    <Civ>cart</Civ>
+    <SpecificName>Ḥamet</SpecificName>
+    <Tooltip>Build in own or neutral territory. Acquire large tracts of territory.Territory root. Train Champion and research technologies. Garrison Soldiers for additional arrows.</Tooltip>
+  </Identity>
+  <Obstruction>
+    <Static width="26.0" depth="28.0"/>
+  </Obstruction>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/champion_infantry
+      units/{civ}/champion_cataphract
+      units/{civ}/infantry_spearman_b     
+      units/{civ}/infantry_javelineer_b 
+      units/{civ}/cavalry_javelineer_b        
+      units/{civ}/infantry_swordsman_merc_a
+      units/{civ}/infantry_archer_merc_a  
+      units/{civ}/infantry_slinger_merc_a     
+      units/{civ}/cavalry_spearman_merc_a  
+      units/{civ}/cavalry_swordsman_merc_a   
+    </Entities>
+  </Trainer>     
+  <VisualActor>
+    <FoundationActor>structures/carthaginians/fndn_fortress.xml</FoundationActor>
+    <Actor>structures/carthaginians/fortress.xml</Actor>
+  </VisualActor>
+  <WallPiece>
+    <Length>25.0</Length>
+    <Indent>6.4</Indent>
+  </WallPiece>
+</Entity>

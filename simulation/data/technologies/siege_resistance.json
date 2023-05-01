@@ -1,0 +1,18 @@
+{
+	"genericName": "Armor Plating",
+	"description": "Cover the exterior with iron plates to protect against fire and projectiles.",
+	"cost": {
+		"metal": 400
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "armor_plates_gold.png",
+	"researchTime": 40,
+	"tooltip": "Battering Ram and Siege Towers +6 pierce resistance and +5 crush resistance.",
+	"modifications": [
+		{ "value": "Resistance/Entity/Damage/Pierce", "add": 6 },
+		{ "value": "Resistance/Entity/Damage/Crush", "add": 5 }
+	],
+	"affects": ["Ram", "SiegeTower"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

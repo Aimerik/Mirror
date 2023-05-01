@@ -1,0 +1,9 @@
+{
+	"type": "range",
+	"radius": 40,
+	"affects": ["FishingBoat"],
+	"modifications": [{ "value": "Health/RegenRate", "add": 3 }],
+	"auraName": "Fishing Boat Repair",
+	"auraDescription": "Heals nearby Fishing Boat at 3 HP per second.",
+	"overlayIcon": "art/textures/ui/session/auras/heal.png"
+}

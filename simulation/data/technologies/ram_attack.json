@@ -1,0 +1,22 @@
+{
+	"genericName": "Advanced Ram",
+	"description": "Advanced technologies improve Ram efficiency.",
+	"cost": {
+		"wood": 0,
+		"metal": 300
+	},
+	"requirements": {
+		"all": [
+			{ "tech": "phase_city" }
+		]
+	},
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "siege_ram.png",
+	"researchTime": 40,
+	"tooltip": "Battering Ram +25% attack crush damage.",
+	"modifications": [
+		{ "value": "Attack/Melee/Damage/Crush", "multiply": 1.25 }
+	],
+	"affects": ["Siege"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

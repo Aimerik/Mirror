@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_infantry_melee">
+  <Attack>
+    <Melee>
+      <AttackName>Spear</AttackName>
+      <Damage>
+        <Hack>9</Hack>
+      </Damage>
+      <MaxRange>4</MaxRange>
+      <PrepareTime>500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Bonuses>
+      <Bonus1>
+          <Classes>Cavalry</Classes>
+          <Multiplier>1.25</Multiplier>
+      </Bonus1>      
+      <Bonus2>
+          <Classes>Armored</Classes>
+          <Multiplier>0.75</Multiplier>
+      </Bonus2>        
+      </Bonuses>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>      
+    </Melee>
+  </Attack>
+  <Health>
+    <Max>110</Max>
+  </Health>
+  <Identity>
+    <GenericName>Spearman</GenericName>
+    <Tooltip>Counters: 0.75× vs Armored and 1.25 × Cavalry.</Tooltip>
+    <VisibleClasses datatype="tokens">Spearman</VisibleClasses>
+  </Identity>
+  <Sound>
+    <SoundGroups>
+      <attack_melee>attack/weapon/spear_attack.xml</attack_melee>
+    </SoundGroups>
+  </Sound>
+</Entity>

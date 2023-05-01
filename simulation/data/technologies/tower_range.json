@@ -1,0 +1,19 @@
+{
+	"genericName": "Arrow Shooters",
+	"description": "Archers can shoot more powerful arrows.",
+	"cost": {
+		"food": 500,
+		"metal":500
+	},
+	"requirements": { "tech": "phase_city" },
+	"requirementsTooltip": "Unlocked in City Phase.",
+	"icon": "bow_recurved.png",
+	"researchTime": 40,
+	"tooltip": "+3 attack damage and +10 Vision of defensive structure.",
+	"modifications": [
+		{ "value": "Vision/Range","add": 10 },
+		{ "value": "Attack/Ranged/Damage/Pierce", "add": 3 }
+	],
+	"affects": ["Tower","Fortress","CivilCentre"],
+	"soundComplete": "interface/alarm/alarm_upgradearmory.xml"
+}

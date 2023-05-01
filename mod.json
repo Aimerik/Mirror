@@ -1,0 +1,8 @@
+{
+	"name": "mirror",
+	"version": "0.26.2",
+	"label": " An impressive 0 A.D mod.",
+	"description": "",
+	"dependencies": ["0ad=0.0.26"]
+}
+
