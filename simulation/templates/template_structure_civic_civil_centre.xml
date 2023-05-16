@@ -91,6 +91,7 @@
   <Population>
     <Bonus>20</Bonus>
   </Population>
+  
   <ProductionQueue/> 
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>

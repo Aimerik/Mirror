@@ -45,6 +45,7 @@
   <Obstruction>
     <Static width="36.0" depth="12.0"/>
   </Obstruction>
+  <ProductionQueue/>   
   <Trainer>
     <BatchTimeModifier>0.8</BatchTimeModifier>
     <Entities datatype="tokens">

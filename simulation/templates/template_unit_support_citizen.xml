@@ -117,6 +117,7 @@
     </SoundGroups>
   </Sound>
   <UnitAI>
+    <DefaultStance>aggressive</DefaultStance> 
     <CanPatrol>false</CanPatrol>
     <Formations disable=""/>
   </UnitAI>

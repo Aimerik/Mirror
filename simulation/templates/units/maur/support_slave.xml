@@ -7,6 +7,7 @@
     </Entities>
   </Builder>
   <Identity>
+    <Civ>maur</Civ>    
     <SpecificName>Doûlos</SpecificName>
     <Icon>units/global_slave.png</Icon>
   </Identity>

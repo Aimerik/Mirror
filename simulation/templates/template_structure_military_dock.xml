@@ -49,6 +49,7 @@
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
   </RallyPointRenderer>
+  <ProductionQueue/>   
   <Researcher>
     <Technologies datatype="tokens">
       fishing_boat_gather_capacity

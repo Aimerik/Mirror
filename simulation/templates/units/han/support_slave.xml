@@ -6,6 +6,7 @@
     </Entities>
   </Builder>
   <Identity>
+    <Civ>han</Civ>    
     <SpecificName>Nú</SpecificName>
     <Icon>units/global_slave.png</Icon>
   </Identity>

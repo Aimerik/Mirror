@@ -47,6 +47,19 @@
       </Damage>
     </Entity>
   </Resistance>  
+  <ProductionQueue/>  
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/siege_ram
+      units/{civ}/siege_tower
+      units/{civ}/siege_scorpio_packed
+      units/{civ}/siege_polybolos_packed
+      units/{civ}/siege_oxybeles_packed
+      units/{civ}/siege_lithobolos_packed
+      units/{civ}/siege_ballista_packed
+    </Entities>
+  </Trainer>   
   <Researcher>
     <Technologies datatype="tokens">
       ram_attack
@@ -64,18 +77,7 @@
     <Root>false</Root>
     <Radius>38</Radius>
   </TerritoryInfluence>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}/siege_ram
-      units/{civ}/siege_tower
-      units/{civ}/siege_scorpio_packed
-      units/{civ}/siege_polybolos_packed
-      units/{civ}/siege_oxybeles_packed
-      units/{civ}/siege_lithobolos_packed
-      units/{civ}/siege_ballista_packed
-    </Entities>
-  </Trainer>
+
   <Vision>
     <Range>40</Range>
   </Vision>

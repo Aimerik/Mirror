@@ -234,7 +234,10 @@ function GetTechnologyData(technologyName, civ)
 
 	if (!(technologyName in g_TechnologyData[civ]))
 	{
-		let template = GetTechnologyDataHelper(TechnologyTemplates.Get(technologyName), civ, g_ResourceData);
+		const tech = TechnologyTemplates.Get(technologyName);
+		if (!tech)
+			return;
+		let template = GetTechnologyDataHelper(tech, civ, g_ResourceData);
 		translateObjectKeys(template, ["specific", "generic", "description", "tooltip", "requirementsTooltip"]);
 		g_TechnologyData[civ][technologyName] = deepfreeze(template);
 	}
@@ -513,7 +516,7 @@ function closeOpenDialogs()
 	g_TradeDialog.close();
 }
 
-function endGame()
+function endGame(showSummary)
 {
 	// Before ending the game
 	let replayDirectory = Engine.GetCurrentReplayDirectory();
@@ -554,7 +557,16 @@ function endGame()
 		summaryData.nextPage = menu;
 	}
 
-	Engine.SwitchGuiPage("page_summary.xml", summaryData);
+	if (showSummary)
+		Engine.SwitchGuiPage("page_summary.xml", summaryData);
+	else if (g_InitAttributes.campaignData)
+		Engine.SwitchGuiPage(summaryData.nextPage, summaryData.campaignData);
+	else if (Engine.HasXmppClient())
+		Engine.SwitchGuiPage("page_lobby.xml", { "dialog": false });
+	else if (g_IsReplay)
+		Engine.SwitchGuiPage("page_replaymenu.xml");
+	else
+		Engine.SwitchGuiPage("page_pregame.xml");
 }
 
 // Return some data that we'll use when hotloading this file after changes
@@ -739,7 +751,7 @@ function updateGroups()
 
 	for (let i in Engine.GetGUIObjectByName("unitGroupPanel").children)
 	{
-		Engine.GetGUIObjectByName("unitGroupLabel[" + i + "]").caption = i;
+		Engine.GetGUIObjectByName("unitGroupLabel[" + i + "]").caption = +i + 1;
 
 		let button = Engine.GetGUIObjectByName("unitGroupButton[" + i + "]");
 		button.hidden = g_Groups.groups[i].getTotalCount() == 0;

@@ -39,7 +39,6 @@
       <metal>10</metal>
     </Capacities>
   </ResourceGatherer>
-  <TreasureCollector disable=""/>
   <Sound>
     <SoundGroups>
       <build>resource/construction/con_wood.xml</build>
@@ -54,4 +53,7 @@
       <trained>actor/singlesteps/steps_gravel_trained.xml</trained>
     </SoundGroups>
   </Sound>
+  <Vision>
+    <Range>32</Range>
+  </Vision>  
 </Entity>

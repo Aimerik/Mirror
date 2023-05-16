@@ -38,6 +38,15 @@
   <Obstruction>
     <Static width="29" depth="27"/>
   </Obstruction>
+  <ProductionQueue/> 
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/support_elephant
+      units/{civ}/champion_elephant
+      units/{civ}/champion_elephant_armored
+    </Entities>
+  </Trainer>  
   <Researcher>
     <Technologies datatype="tokens">
       attack_tusk_spikes
@@ -60,14 +69,7 @@
     <Root>false</Root>
     <Radius>38</Radius>
   </TerritoryInfluence>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}/support_elephant
-      units/{civ}/champion_elephant
-      units/{civ}/champion_elephant_armored
-    </Entities>
-  </Trainer>
+
   <Vision>
     <Range>40</Range>
   </Vision>

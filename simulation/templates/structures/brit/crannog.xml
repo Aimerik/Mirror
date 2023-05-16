@@ -28,6 +28,7 @@
   <RallyPointRenderer>
     <LinePassabilityClass>ship</LinePassabilityClass>
   </RallyPointRenderer>
+  <ProductionQueue/>   
   <Researcher>
     <Technologies datatype="tokens">
       -phase_town_{civ}

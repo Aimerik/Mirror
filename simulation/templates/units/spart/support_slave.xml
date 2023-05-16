@@ -2,11 +2,12 @@
 <Entity parent="template_unit_support_slave">
   <Builder>
     <Entities datatype="tokens">
-
       -structures/{civ}/wallset_stone
     </Entities>
   </Builder>  
   <Identity>
+    <Civ>spart</Civ>
+  <Lang>greek</Lang>    
     <SpecificName>Heílōs</SpecificName>
     <Icon>units/global_slave.png</Icon>
   </Identity>

@@ -13,6 +13,7 @@
   <Obstruction>
     <Static width="18" depth="30.0"/>
   </Obstruction>
+  <ProductionQueue/>   
     <Trainer>
     <Entities datatype="tokens">
       units/{civ}/champion_infantry_apedemak

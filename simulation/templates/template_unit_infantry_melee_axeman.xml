@@ -19,7 +19,7 @@
       <MaxRange>3</MaxRange>
       <PrepareTime>500</PrepareTime>
       <RepeatTime>1000</RepeatTime>
-      <PreferredClasses datatype="tokens">Unit+!Ship</PreferredClasses>      
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>     
     </Melee>
   </Attack>
   <Identity>

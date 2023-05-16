@@ -6,15 +6,10 @@
     </Entities>
   </Builder>
   <Identity>
+    <Civ>cart</Civ>    
     <SpecificName>ʕabd</SpecificName>
     <Icon>units/global_slave.png</Icon>
-  </Identity>
-  <Builder>
-    <Entities datatype="tokens">
-      structures/cart/super_dock
-    
-    </Entities>  
-  </Builder>    
+  </Identity>  
   <VisualActor>
     <Actor>units/global/slave.xml</Actor>
   </VisualActor>

@@ -41,6 +41,7 @@
     <wood>20</wood>
   </Loot>
   <RallyPoint disable=""/>
+  <ProductionQueue/>   
   <Researcher>
     <Technologies datatype="tokens">
       gather_farming_plows

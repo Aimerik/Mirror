@@ -7,6 +7,8 @@
     </Entities>
   </Builder>
   <Identity>
+    <Civ>ptol</Civ>
+  <Lang>greek</Lang>    
     <SpecificName>Doûlos</SpecificName>
     <Icon>units/global_slave.png</Icon>
   </Identity>

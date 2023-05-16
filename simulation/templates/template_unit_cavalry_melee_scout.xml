@@ -60,9 +60,6 @@
       <invalid_building_placement>interface/alarm/alarm_invalid_building_placement.xml</invalid_building_placement>
     </SoundGroups>
   </Sound>
-  <TrainingRestrictions>
-    <Category>Scout</Category>
-  </TrainingRestrictions>
   <UnitAI>
     <DefaultStance>standground</DefaultStance>
   </UnitAI>

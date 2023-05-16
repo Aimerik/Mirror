@@ -6,6 +6,7 @@
     </Entities>
   </Builder>
   <Identity>
+    <Civ>gaul</Civ>    
     <SpecificName>Doûlos</SpecificName>
     <Icon>units/global_slave.png</Icon>
   </Identity>

@@ -8,6 +8,7 @@
     </Entities>
   </Builder>
   <Identity>
+    <Civ>kush</Civ>    
     <SpecificName>Doûlos</SpecificName>
     <Icon>units/global_slave.png</Icon>
   </Identity>

@@ -38,6 +38,7 @@
   <Obstruction>
     <Static width="20.0" depth="20.0"/>
   </Obstruction>
+  <ProductionQueue/>   
   <Researcher>
     <Technologies datatype="tokens">
      soldier_batch_training 
@@ -57,12 +58,7 @@
       <constructed>interface/complete/building/complete_stable.xml</constructed>
     </SoundGroups>
   </Sound>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
 
-    </Entities>
-  </Trainer>
   <Vision>
     <Range>32</Range>
   </Vision>

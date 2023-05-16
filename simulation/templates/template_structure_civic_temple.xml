@@ -40,6 +40,13 @@
   <Obstruction>
     <Static width="17.5" depth="30.0"/>
   </Obstruction>
+  <ProductionQueue/> 
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/support_healer_b 
+    </Entities>
+  </Trainer>    
   <Researcher>
     <Technologies datatype="tokens">
       heal_range_2
@@ -70,12 +77,7 @@
     <Radius>40</Radius>
     <Weight>30000</Weight>
   </TerritoryInfluence>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}/support_healer_b 
-    </Entities>
-  </Trainer>
+
   <Vision>
     <Range>40</Range>
   </Vision>

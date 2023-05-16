@@ -45,6 +45,7 @@
   <Obstruction>
     <Static width="28" depth="56.0"/>
   </Obstruction>
+  <ProductionQueue/>   
   <Trainer>
     <Entities datatype="tokens">
       -units/{civ}/support_healer_b

@@ -10,8 +10,8 @@
   <Cost>
     <BuildTime>200</BuildTime>
     <Resources>
-      <wood>300</wood>
-      <stone>300</stone>
+      <wood>500</wood>
+      <stone>250</stone>
       <metal>0</metal>
     </Resources>
   </Cost>
@@ -20,12 +20,12 @@
     <Height>8.0</Height>
   </Footprint>
   <GarrisonHolder>
-    <Max>9</Max>
-    <EjectHealth>0</EjectHealth>
+    <Max>20</Max>
+    <EjectHealth>0.1</EjectHealth>
     <EjectClassesOnDestroy datatype="tokens">Unit</EjectClassesOnDestroy>
-    <List datatype="tokens">Support Minister Infantry</List>
-    <BuffHeal>1</BuffHeal>
-    <LoadingRange>1</LoadingRange>
+    <List datatype="tokens">Support Soldier ！Elephant</List>
+    <BuffHeal>3</BuffHeal>
+    <LoadingRange>2</LoadingRange>
   </GarrisonHolder>
   <Health>
     <Max>3000</Max>
@@ -57,6 +57,15 @@
     <Bonus>20</Bonus>
   </Population>
   <ProductionQueue/>
+  <Trainer>
+    <BatchTimeModifier>0.8</BatchTimeModifier>
+    <Entities datatype="tokens">
+      units/{civ}/hero_liu_bang_horse
+      units/{civ}/hero_han_xin_chariot      
+      units/{civ}/hero_wei_qing_horse    
+      units/{civ}/support_minister      
+    </Entities>
+  </Trainer>  
   <Researcher>
     <Technologies datatype="tokens">
       pair_unlock_civil_engineering_han
@@ -67,27 +76,27 @@
   </Researcher>
   <ResourceTrickle>
     <Rates>
-      <food>0.0</food>
-      <wood>0.1</wood>
-      <stone>0.1</stone>
-      <metal>0.1</metal>
+      <food>1.5</food>
+      <wood>1.5</wood>
+      <stone>1</stone>
+      <metal>1</metal>
     </Rates>
-    <Interval>2000</Interval>
+    <Interval>3000</Interval>
   </ResourceTrickle>
   <TerritoryInfluence>
     <Root>true</Root>
     <Radius>60</Radius>
-    <Weight>30000</Weight>
+    <Weight>40000</Weight>
   </TerritoryInfluence>
-  <Trainer>
-    <BatchTimeModifier>0.8</BatchTimeModifier>
-    <Entities datatype="tokens">
-      units/{civ}/hero_liu_bang_horse
-      units/{civ}/hero_han_xin_chariot      
-      units/{civ}/hero_wei_qing_horse    
-      units/{civ}/support_minister      
-    </Entities>
-  </Trainer>
+  <Resistance>
+    <Entity>
+      <Damage>
+        <Fire>4</Fire>    
+        <Pierce>30</Pierce>       
+        <Crush>3</Crush>
+      </Damage>
+    </Entity>
+  </Resistance>
   <Vision>
     <Range>80</Range>
   </Vision>
